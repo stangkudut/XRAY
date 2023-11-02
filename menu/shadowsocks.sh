@@ -26,8 +26,8 @@ read -p " Select menu :  "  opt
 echo -e ""
 case $opt in
 1) clear ; add-ss ; exit ;;
-2) clear ; trialss ; exit ;;
-3) clear ; extend-ss ; exit ;;
+2) clear ; try-ss ; exit ;;
+3) clear ; ext-ss ; exit ;;
 4) clear ; del-ss ; exit ;;
 5) clear ; cek-ss ; exit ;;
 0) clear ; menu ; exit ;;
