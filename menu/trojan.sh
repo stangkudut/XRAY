@@ -26,8 +26,8 @@ read -p " Select menu :  "  opt
 echo -e ""
 case $opt in
 1) clear ; add-trojan ; exit ;;
-2) clear ; trialtrojan ; exit ;;
-3) clear ; extend-trojan ; exit ;;
+2) clear ; try-trojan ; exit ;;
+3) clear ; ext-trojan ; exit ;;
 4) clear ; del-trojan ; exit ;;
 5) clear ; cek-trojan ; exit ;;
 0) clear ; menu ; exit ;;
