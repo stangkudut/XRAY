@@ -9,7 +9,6 @@
 	<title>
 		Auto script VPS ST4NGKUDUT
 	</title>
-	<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/givpn/givpn/master/favicon.ico">
 	<style>
 		body {
 			padding: 25px;
@@ -27,7 +26,7 @@
 
 <body>
 <center>
-	<h1>givpn</h1>
+	<h1>ST4NGKUDUT</h1>
 	<h2>Auto script VPS</h2>
 	<div>
 		<button onclick="darkMode()">Darkmode</button>
