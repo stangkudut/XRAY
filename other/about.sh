@@ -11,7 +11,7 @@ clear
 echo ""
 echo ""
 echo -e "${BB}—————————————————————————————————————————————————————————${NC}"
-echo -e "                     ${WB}MOD SCRIPT BY GIVPN${NC}"
+echo -e "                   ${WB}MOD SCRIPT BY ST4NGKUDUT${NC}              "
 echo -e "${BB}—————————————————————————————————————————————————————————${NC}"
 echo -e "  ${WB}»»» Protocol Service «««  |  »»» Network Protocol «««${NC}  "
 echo -e "${BB}—————————————————————————————————————————————————————————${NC}"
