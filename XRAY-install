@@ -1,4 +1,4 @@
-rm -rf xray
+rm -rf XRAY-install
 clear
 BGreen='\e[1;32m'
 NC='\e[0m'
