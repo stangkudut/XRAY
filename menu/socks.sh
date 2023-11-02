@@ -26,8 +26,8 @@ read -p " Select menu :  "  opt
 echo -e ""
 case $opt in
 1) clear ; add-socks ; exit ;;
-2) clear ; trialsocks ; exit ;;
-3) clear ; extend-socks ; exit ;;
+2) clear ; try-socks ; exit ;;
+3) clear ; ext-socks ; exit ;;
 4) clear ; del-socks ; exit ;;
 5) clear ; cek-socks ; exit ;;
 0) clear ; menu ; exit ;;
