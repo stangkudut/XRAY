@@ -26,8 +26,8 @@ read -p " Select menu :  "  opt
 echo -e ""
 case $opt in
 1) clear ; add-vmess ; exit ;;
-2) clear ; trialvmess ; exit ;;
-3) clear ; extend-vmess ; exit ;;
+2) clear ; try-vmess ; exit ;;
+3) clear ; ext-vmess ; exit ;;
 4) clear ; del-vmess ; exit ;;
 5) clear ; cek-vmess ; exit ;;
 0) clear ; menu ; exit ;;
