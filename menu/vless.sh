@@ -26,8 +26,8 @@ read -p " Select menu :  "  opt
 echo -e ""
 case $opt in
 1) clear ; add-vless ; exit ;;
-2) clear ; trialvless ; exit ;;
-3) clear ; extend-vless ; exit ;;
+2) clear ; try-vless ; exit ;;
+3) clear ; ext-vless ; exit ;;
 4) clear ; del-vless ; exit ;;
 5) clear ; cek-vless ; exit ;;
 0) clear ; menu ; exit ;;
