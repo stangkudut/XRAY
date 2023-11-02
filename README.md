@@ -44,9 +44,6 @@
 # Setup DNS Cloudflare
 ![cf](https://raw.githubusercontent.com/dugong-lewat/autoscript/main/cf.jpg)
 
-# Screenshot
-![ss](https://raw.githubusercontent.com/dugong-lewat/autoscript/main/xray.jpg)
-
 # Installation
 - via WGET
 ```
