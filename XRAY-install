@@ -101,7 +101,7 @@ clear
 echo -e "${GB}[ INFO ]${NC} ${YB}Setup Nginx & Xray Conf${NC}"
 echo "UQ3w2q98BItd3DPgyctdoJw4cqQFmY59ppiDQdqMKbw=" > /usr/local/etc/xray/serverpsk
 wget -q -O /usr/local/etc/xray/config.json https://raw.githubusercontent.com/stangkudut/XRAY/main/other/config.json
-wget -q -O /etc/nginx/nginx.conf https://raw.githubusercontent.com/stangkudut/XRAY/main/nginx.conf
+wget -q -O /etc/nginx/nginx.conf https://raw.githubusercontent.com/stangkudut/XRAY/main/other/nginx.conf
 rm -rf /etc/nginx/conf.d/xray.conf
 wget -q -O /etc/nginx/conf.d/xray.conf https://raw.githubusercontent.com/stangkudut/XRAY/main/other/xray.conf
 systemctl restart nginx
