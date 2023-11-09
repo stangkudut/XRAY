@@ -30,7 +30,6 @@ rm -rf /root/backup
 mkdir /root/backup
 cp /etc/passwd backup/
 cp /etc/group backup/
-cp -r /var/lib/crot/ backup/crot
 cp -r /usr/local/etc/xray backup/xray
 cp -r /home/vps/public_html backup/public_html
 cd /root
