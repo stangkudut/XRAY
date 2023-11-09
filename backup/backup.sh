@@ -26,10 +26,10 @@ EOF
 fi
 clear
 echo "Mohon Menunggu , Proses Backup sedang berlangsung !!"
-rm -rf /root/backup
-mkdir /root/backup
-cp /etc/passwd backup/
-cp /etc/group backup/
+rm -rf /root/backupvps
+mkdir /root/backupvps
+cp /etc/passwd backupvps/
+cp /etc/group backupvps/
 cp -r /usr/local/etc/xray backupvps/xray
 cd /root
 zip -r $IP-$date.zip backup > /dev/null 2>&1
