@@ -39,7 +39,7 @@ IP VPS        : $IP
 Tanggal       : $date
 ==================================
 "
-curl -X POST https://api.telegram.org/bot6608829596:AAE946U43ef2GeJ1dD90TZjpTNfbo-n3Mb0/sendDocument \
+curl -X POST https://api.telegram.org/bot1551523951:AAH2a4NOHDhsPeoN_vZNIOn7Jida5o1pkYY/sendDocument \
      -F "chat_id=$(cat /root/id)" \
      -F "document=@/root/backup.zip" \
      -F "caption=File backup mu" &> /dev/null
