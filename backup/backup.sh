@@ -36,7 +36,6 @@ echo -e "
 Detail Backup 
 ==================================
 IP VPS        : $IP
-Link Backup   : $link
 Tanggal       : $date
 ==================================
 "
