@@ -51,6 +51,5 @@ wget -O restore "https://raw.githubusercontent.com/stangkudut/XRAY/main/backup/r
 chmod +x autobackup
 chmod +x backup
 chmod +x restore
-chmod +x limitspeed
 cd
 rm -f /root/set-br.sh
