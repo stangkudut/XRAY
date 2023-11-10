@@ -69,9 +69,9 @@ figlet "autobackup" | lolcat
 echo -e "=============================="
 echo -e "     Autobackup Data $sts     "
 echo -e "=============================="
-echo -e "1. Start Autobackup"
-echo -e "2. Stop Autobackup"
-echo -e "3. Ganti telegram Penerima"
+echo -e "1. Start Autobackup           "
+echo -e "2. Stop Autobackup            "
+echo -e "3. Ganti telegram Penerima    "
 echo -e "=============================="
 read -rp "Please Enter The Correct Number : " -e num
 case $num in
