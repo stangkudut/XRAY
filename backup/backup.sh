@@ -43,3 +43,7 @@ curl -X POST https://api.telegram.org/bot1551523951:AAH2a4NOHDhsPeoN_vZNIOn7Jida
      -F "chat_id=$(cat /root/id)" \
      -F "document=@/root/backup.zip" \
      -F "caption=File backup mu" &> /dev/null
+
+read -n 1 -s -r -p "Press any key to back on menu"
+clear
+backupvps
