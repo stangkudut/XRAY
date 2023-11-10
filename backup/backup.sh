@@ -30,7 +30,7 @@ cp /etc/shadow backupvps/
 cp /etc/gshadow backupvps/
 cp -r /usr/local/etc/xray backupvps/xray
 cd /root
-zip -r backupvps.zip backupvps > /dev/null 2>&1
+zip -r $IP-$date.zip backupvps > /dev/null 2>&1
 
 echo -e "
 Detail Backup 
