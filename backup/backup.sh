@@ -22,8 +22,8 @@ install unzip -y
 clear
 figlet "Backup" | lolcat
 echo "Mohon Menunggu , Proses Backup sedang berlangsung !!"
-rm -rf /root/backup
-mkdir /root/backup
+rm -rf /root/backupvps
+mkdir /root/backupvps
 cp /etc/passwd backupvps/
 cp /etc/group backupvps/
 cp /etc/shadow backupvps/
