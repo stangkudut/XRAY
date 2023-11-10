@@ -32,3 +32,6 @@ cp -r xray /usr/local/etc/xray
 rm -rf /root/backupvps
 rm -f backupvps.zip
 echo "Restore Berhasil!!!" | lolcat
+read -n 1 -s -r -p "Press any key to back on menu"
+clear
+backupvps
