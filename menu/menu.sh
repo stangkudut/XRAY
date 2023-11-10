@@ -65,8 +65,8 @@ echo -e " ${MB}[8]${NC} ${YB}Log Create Account${NC}  ${MB}[14]${NC} ${YB}VPS Ba
 echo -e " ${MB}[9]${NC} ${YB}Speedtest${NC}           ${MB}[15]${NC} ${YB}Check DNS Status${NC}"
 echo -e " ${MB}[10]${NC} ${YB}Change Domain${NC}      ${MB}[16]${NC} ${YB}Change Xray-core Mod${NC}"
 echo -e " ${MB}[11]${NC} ${YB}Renew Cert${NC}         ${MB}[17]${NC} ${YB}Change Xray-core Official${NC}"
-echo -e " ${MB}[12]${NC} ${YB}About Script${NC}       ${MB}[18]${NC} ${YB}Reboot VPS${NC}"
-echo -e " ${MB}[13]${NC} ${YB}DNS Setting${NC}"
+echo -e " ${MB}[12]${NC} ${YB}About Script${NC}       ${MB}[18]${NC} ${YB}Restart XRAY${NC}"
+echo -e " ${MB}[13]${NC} ${YB}DNS Setting${NC}        ${MB}[19]${NC} ${YB}Reboot VPS${NC}"
 echo -e ""
 echo -e " ${MB}[x]${NC} ${YB}Exit Menu${NC}"
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
@@ -98,7 +98,8 @@ echo ""
 menu ;;
 16) clear ; xraymod ;;
 17) clear ; xrayofficial ;;
-18) clear ; reboot ; /sbin/reboot ;;
+18) clear ; restart-xray ;;
+19) clear ; reboot ; /sbin/reboot ;;
 x) clear ; exit ;;
 *) echo -e "${RB}salah input${NC}" ; sleep 1 ; menu ;;
 esac
