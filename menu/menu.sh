@@ -61,11 +61,12 @@ echo -e " ${MB}[4]${NC} ${YB}Shadowsocks Menu${NC}"
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
 echo -e "                 ${WB}----- [ Utility ] -----${NC}                "
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
-echo -e " ${MB}[8]${NC} ${YB}Log Create Account${NC}  ${MB}[13]${NC} ${YB}DNS Setting${NC}"
-echo -e " ${MB}[9]${NC} ${YB}Speedtest${NC}           ${MB}[14]${NC} ${YB}Check DNS Status${NC}"
-echo -e " ${MB}[10]${NC} ${YB}Change Domain${NC}      ${MB}[15]${NC} ${YB}Change Xray-core Mod${NC}"
-echo -e " ${MB}[11]${NC} ${YB}Renew Cert${NC}         ${MB}[16]${NC} ${YB}Change Xray-core Official${NC}"
-echo -e " ${MB}[12]${NC} ${YB}About Script${NC}       ${MB}[17]${NC} ${YB}Reboot VPS${NC}"
+echo -e " ${MB}[8]${NC} ${YB}Log Create Account${NC}  ${MB}[14]${NC} ${YB}VPS Backup${NC}"
+echo -e " ${MB}[9]${NC} ${YB}Speedtest${NC}           ${MB}[15]${NC} ${YB}Check DNS Status${NC}"
+echo -e " ${MB}[10]${NC} ${YB}Change Domain${NC}      ${MB}[16]${NC} ${YB}Change Xray-core Mod${NC}"
+echo -e " ${MB}[11]${NC} ${YB}Renew Cert${NC}         ${MB}[17]${NC} ${YB}Change Xray-core Official${NC}"
+echo -e " ${MB}[12]${NC} ${YB}About Script${NC}       ${MB}[18]${NC} ${YB}Reboot VPS${NC}"
+echo -e " ${MB}[13]${NC} ${YB}DNS Setting${NC}"
 echo -e ""
 echo -e " ${MB}[x]${NC} ${YB}Exit Menu${NC}"
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
@@ -86,7 +87,8 @@ case $opt in
 11) clear ; certxray ;;
 12) clear ; about ;;
 13) clear ; changer ;;
-14) clear ;
+14) clear ; backupvps ;;
+15) clear ;
 resolvectl status
 echo ""
 echo ""
@@ -94,9 +96,9 @@ read -n 1 -s -r -p "Press any key to back on menu"
 echo ""
 echo ""
 menu ;;
-15) clear ; xraymod ;;
-16) clear ; xrayofficial ;;
-17) clear ; reboot ; /sbin/reboot ;;
+16) clear ; xraymod ;;
+17) clear ; xrayofficial ;;
+18) clear ; reboot ; /sbin/reboot ;;
 x) clear ; exit ;;
 *) echo -e "${RB}salah input${NC}" ; sleep 1 ; menu ;;
 esac
