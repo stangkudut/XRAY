@@ -209,6 +209,7 @@ wget -q -O xrayofficial "https://raw.githubusercontent.com/stangkudut/XRAY/main/
 wget -q -O about "https://raw.githubusercontent.com/stangkudut/XRAY/main/other/about.sh"
 wget -q -O clear-log "https://raw.githubusercontent.com/stangkudut/XRAY/main/other/clear-log.sh"
 wget -q -O changer "https://raw.githubusercontent.com/stangkudut/XRAY/main/other/changer.sh"
+wget -q -O restart-xray "https://raw.githubusercontent.com/stangkudut/XRAY/main/other/restart-xray.sh"
 sleep 0.5
 echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Backup Menu${NC}"
 wget -q -O backrest "https://raw.githubusercontent.com/stangkudut/XRAY/main/backup/backrest.sh"
@@ -276,6 +277,10 @@ chmod +x xrayofficial
 chmod +x about
 chmod +x clear-log
 chmod +x changer
+chmod +x autobackup
+chmod +x backup
+chmod +x restore
+chmod +x restart-xray
 cd
 echo "0 0 * * * root xp" >> /etc/crontab
 echo "*/3 * * * * root clear-log" >> /etc/crontab
