@@ -24,10 +24,10 @@ figlet "Backup" | lolcat
 echo "Mohon Menunggu , Proses Backup sedang berlangsung !!"
 rm -rf /root/backup
 mkdir /root/backup
-cp /etc/passwd backup/
-cp /etc/group backup/
-cp /etc/shadow backup/
-cp /etc/gshadow backup/
+cp /etc/passwd backupvps/
+cp /etc/group backupvps/
+cp /etc/shadow backupvps/
+cp /etc/gshadow backupvps/
 cp -r /usr/local/etc/xray backupvps/xray
 cd /root
 zip -r $IP-$date.zip backup > /dev/null 2>&1
