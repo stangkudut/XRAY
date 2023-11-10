@@ -135,6 +135,7 @@ wget -q -O shadowsocks "https://raw.githubusercontent.com/stangkudut/XRAY/main/m
 wget -q -O shadowsocks2022 "https://raw.githubusercontent.com/stangkudut/XRAY/main/menu/shadowsocks2022.sh"
 wget -q -O socks "https://raw.githubusercontent.com/stangkudut/XRAY/main/menu/socks.sh"
 wget -q -O allxray "https://raw.githubusercontent.com/stangkudut/XRAY/main/menu/allxray.sh"
+wget -q -O allxray "https://raw.githubusercontent.com/stangkudut/XRAY/main/menu/backupvps.sh"
 sleep 0.5
 echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Menu Vmess${NC}"
 wget -q -O add-vmess "https://raw.githubusercontent.com/stangkudut/XRAY/main/vmess/add-vmess.sh"
@@ -204,6 +205,12 @@ wget -q -O xrayofficial "https://raw.githubusercontent.com/stangkudut/XRAY/main/
 wget -q -O about "https://raw.githubusercontent.com/stangkudut/XRAY/main/other/about.sh"
 wget -q -O clear-log "https://raw.githubusercontent.com/stangkudut/XRAY/main/other/clear-log.sh"
 wget -q -O changer "https://raw.githubusercontent.com/stangkudut/XRAY/main/other/changer.sh"
+sleep 0.5
+echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Backup Menu${NC}"
+wget -q -O backrest "https://raw.githubusercontent.com/stangkudut/XRAY/main/backup/backrest.sh"
+wget -q -O autobackup "https://raw.githubusercontent.com/stangkudut/XRAY/main/backup/autobackup.sh"
+wget -q -O backup "https://raw.githubusercontent.com/stangkudut/XRAY/main/backup/backup.sh"
+wget -q -O restore "https://raw.githubusercontent.com/stangkudut/XRAY/main/other/restore.sh"
 echo -e "${GB}[ INFO ]${NC} ${YB}Download All Menu Done${NC}"
 sleep 2
 chmod +x add-vmess
