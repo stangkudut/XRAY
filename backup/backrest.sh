@@ -29,13 +29,13 @@ clear
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-sudo apt-get install figlet -y
+sudo apt install figlet -y
 sleep 3
 clear
 sudo apt install ruby -y
 sleep 3
 clear
-sudo gem install lolcat
+sudo apt install lolcat
 sleep 3
 clear
 apt install msmtp-mta ca-certificates bsd-mailx -y
