@@ -25,8 +25,7 @@ sudo apt install figlet -y
 sudo apt install ruby -y
 sudo apt install lolcat -y
 apt install rclone -y
-printf "q\n" | rclone config
-wget -O /root/.config/rclone/rclone.conf "https://${akbarvpn}/rclone.conf"
+wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/stangkudut/XRAY/main/backup/rclone.conf"
 apt install msmtp-mta ca-certificates bsd-mailx -y
 mkdir /backup >> /dev/null 2>&1
 mkdir /user >> /dev/null 2>&1
