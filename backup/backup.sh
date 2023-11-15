@@ -16,33 +16,51 @@ clear
 IP=$(wget -qO- ipinfo.io/ip);
 date=$(date +"%Y-%m-%d")
 clear
-# ==========================================
-install unzip -y
-# Getting
+email=$(cat /home/email)
+if [[ "$email" = "" ]]; then
+echo "Masukkan Email Untuk Menerima Backup"
+read -rp "Email : " -e email
+cat <<EOF>>/home/email
+$email
+EOF
+fi
 clear
 figlet "Backup" | lolcat
 echo "Mohon Menunggu , Proses Backup sedang berlangsung !!"
-rm -rf /root/backupvps
-mkdir /root/backupvps
-cp /etc/passwd backupvps/
-cp /etc/group backupvps/
-cp /etc/shadow backupvps/
-cp /etc/gshadow backupvps/
-cp -r /usr/local/etc/xray backupvps/xray
+rm -rf /root/backupvpsku
+mkdir /root/backupvpsku
+cp /etc/passwd backupvpsku/
+cp /etc/group backupvpsku/
+cp /etc/shadow backupvpsku/
+cp /etc/gshadow backupvpsku/
+cp -r /usr/local/etc/xray backupvpsku/xray
 cd /root
-zip -r $IP-$date.zip backupvps > /dev/null 2>&1
+zip -r $IP-$date.zip backupvpsku > /dev/null 2>&1
+rclone copy /root/$IP-$date.zip backup:server
+url=$(rclone link backup:server/$IP-$date.zip)
+id=(`echo $url | grep '^https' | cut -d'=' -f2`)
+link="https://drive.google.com/u/4/uc?id=${id}&export=download"
 
 echo -e "
 Detail Backup 
 ==================================
 IP VPS        : $IP
+Link Backup   : $link
+Tanggal       : $date
+==================================
+" | mail -s "Backup Data" $email
+rm -rf /root/backup
+rm -r /root/$IP-$date.zip
+clear
+echo -e "
+Detail Backup 
+==================================
+IP VPS        : $IP
+Link Backup   : $link
 Tanggal       : $date
 ==================================
 "
-curl -X POST https://api.telegram.org/bot1551523951:AAH2a4NOHDhsPeoN_vZNIOn7Jida5o1pkYY/sendDocument \
-     -F "chat_id=$(cat /root/id)" \
-     -F "document=@/root/backup.zip" \
-     -F "caption=File backup mu" &> /dev/null
+echo "Silahkan cek Kotak Masuk $email"
 
 read -n 1 -s -r -p "Press any key to back on menu"
 clear
