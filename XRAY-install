@@ -298,6 +298,7 @@ chmod +x changer
 chmod +x autobackup
 chmod +x backup
 chmod +x restore
+chmod +x backupvps
 chmod +x restart-xray
 cd
 echo "0 0 * * * root xp" >> /etc/crontab
