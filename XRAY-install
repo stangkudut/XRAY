@@ -205,7 +205,7 @@ echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Menu All Xray${NC}"
 wget -q -O add-xray "https://raw.githubusercontent.com/stangkudut/XRAY/main/allxray/add-xray.sh"
 wget -q -O del-xray "https://raw.githubusercontent.com/stangkudut/XRAY/main/allxray/del-xray.sh"
 wget -q -O ext-xray "https://raw.githubusercontent.com/stangkudut/XRAY/main/allxray/ext-xray.sh"
-wget -q -O tri-xray "https://raw.githubusercontent.com/stangkudut/XRAY/main/allxray/try-xray.sh"
+wget -q -O try-xray "https://raw.githubusercontent.com/stangkudut/XRAY/main/allxray/try-xray.sh"
 wget -q -O cek-xray "https://raw.githubusercontent.com/stangkudut/XRAY/main/allxray/cek-xray.sh"
 sleep 0.5
 echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Menu Log${NC}"
