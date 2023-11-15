@@ -34,6 +34,7 @@ cp /etc/group backupvpsku/
 cp /etc/shadow backupvpsku/
 cp /etc/gshadow backupvpsku/
 cp -r /usr/local/etc/xray backupvpsku/xray
+cp -r /var/www/html backupvpsku/var/www/html
 cd /root
 zip -r $IP-$date.zip backupvpsku > /dev/null 2>&1
 rclone copy /root/$IP-$date.zip backup:server
