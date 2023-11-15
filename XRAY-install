@@ -233,7 +233,7 @@ echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Backup Menu${NC}"
 wget -q -O backrest "https://raw.githubusercontent.com/stangkudut/XRAY/main/backup/backrest.sh"
 wget -q -O autobackup "https://raw.githubusercontent.com/stangkudut/XRAY/main/backup/autobackup.sh"
 wget -q -O backup "https://raw.githubusercontent.com/stangkudut/XRAY/main/backup/backup.sh"
-wget -q -O restore "https://raw.githubusercontent.com/stangkudut/XRAY/main/other/restore.sh"
+wget -q -O restore "https://raw.githubusercontent.com/stangkudut/XRAY/main/backup/restore.sh"
 echo -e "${GB}[ INFO ]${NC} ${YB}Download All Menu Done${NC}"
 sleep 2
 chmod +x add-vmess
