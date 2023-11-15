@@ -29,6 +29,7 @@ cp group /etc/
 cp shadow /etc/
 cp gshadow /etc/
 cp -r xray /usr/local/etc/xray
+cp -r html /var/www/html
 rm -rf /root/backupvps
 rm -f backupvps.zip
 echo "Restore Berhasil!!!" | lolcat
