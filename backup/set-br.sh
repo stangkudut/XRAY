@@ -41,8 +41,8 @@ clear
 apt install msmtp-mta ca-certificates bsd-mailx -y
 sleep 3
 clear
-read -rp "input your chat id Telegram:" idtele
-echo "$idtele" >> /root/id
+read -rp "input your email:" email
+echo "$email" >> /root/email
 
 cd /usr/bin
 wget -O autobackup "https://raw.githubusercontent.com/stangkudut/XRAY/main/backup/autobackup.sh"
