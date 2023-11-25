@@ -33,7 +33,7 @@ cp /etc/passwd backupvpsku/
 cp /etc/group backupvpsku/
 cp /etc/shadow backupvpsku/
 cp /etc/gshadow backupvpsku/
-cp -r /usr/local/etc/xray backupvpsku/xray
+cp -r /usr/local/etc/xray backupvpsku/usr/local/etc/xray
 cp -r /var/www/html backupvpsku/var/www/html
 cd /root
 zip -r $IP-$date.zip backupvpsku > /dev/null 2>&1
@@ -50,7 +50,7 @@ Link Backup   : $link
 Tanggal       : $date
 ==================================
 " | mail -s "Backup Data" $email
-rm -rf /root/backup
+rm -rf /root/backupvpsku
 rm -r /root/$IP-$date.zip
 clear
 echo -e "
