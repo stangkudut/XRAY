@@ -29,8 +29,8 @@ cp group /etc/
 cp shadow /etc/
 cp gshadow /etc/
 cp -r user /user/
-cp -r xray /usr/local/etc/xray
-cp -r html /var/www/html
+cp -r /usr/local/etc/xray /usr/local/etc/xray
+cp -r /var/www/html /var/www/html
 rm -rf /root/backupvpsku
 rm -f backupvpsku.zip
 echo "Restore Berhasil!!!" | lolcat
