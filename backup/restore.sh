@@ -30,8 +30,8 @@ cp shadow /etc/
 cp gshadow /etc/
 cp -r xray /usr/local/etc/xray
 cp -r html /var/www/html
-rm -rf /root/backupvps
-rm -f backupvps.zip
+rm -rf /root/backupvpsku
+rm -f backupvpsku.zip
 echo "Restore Berhasil!!!" | lolcat
 read -n 1 -s -r -p "Press any key to back on menu"
 clear
