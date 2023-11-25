@@ -18,12 +18,12 @@ echo "This Feature Can Only Be Used According To Vps Data With This Autoscript"
 echo "Please input link to your vps data backup file."
 echo "You can check it on your email if you run backup data vps before."
 read -rp "Link File: " -e url
-wget -O backupvps.zip "$url"
-unzip backupvps.zip
-rm -f backupvps.zip
+wget -O backupvpsku.zip "$url"
+unzip backupvpsku.zip
+rm -f backupvpsku.zip
 sleep 1
 echo Start Restore
-cd /root/backupvps
+cd /root/backupvpsku
 cp passwd /etc/
 cp group /etc/
 cp shadow /etc/
