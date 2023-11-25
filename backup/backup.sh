@@ -33,6 +33,7 @@ cp /etc/passwd backupvpsku/
 cp /etc/group backupvpsku/
 cp /etc/shadow backupvpsku/
 cp /etc/gshadow backupvpsku/
+cp -r /user backupvpsku/user
 cp -r /usr/local/etc/xray backupvpsku/usr/local/etc/xray
 cp -r /var/www/html backupvpsku/var/www/html
 cd /root
