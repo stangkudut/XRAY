@@ -10,7 +10,7 @@ WB='\e[37;1m'
 BW='\e[30;48;5;15m'
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "${BB}║${BW}             ----- [ All Xray  Menu ] -----            ${NC}${BB}║${NC} "
+echo -e "${BB}║${BW}             ----- [ All Xray Menu ] -----             ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo -e "${BB}║${NC}   ${RB}[1]${NC} ${GB}Create Account All Xray${NC}                         ${BB}║${NC}"
 echo -e "${BB}║${NC}   ${RB}[2]${NC} ${GB}Trial Account All Xray${NC}                          ${BB}║${NC}"
