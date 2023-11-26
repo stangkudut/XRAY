@@ -5,19 +5,20 @@ GB='\e[32;1m'
 YB='\e[33;1m'
 BB='\e[34;1m'
 MB='\e[35;1m'
-CB='\e[35;1m'
+CB='\e[36;1m'
 WB='\e[37;1m'
+BW='\e[123;48;5;33m'
 xray_service=$(systemctl status xray | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 nginx_service=$(systemctl status nginx | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 if [[ $xray_service == "running" ]]; then
-status_xray="${GB}[ ON ]${NC}"
+status_xray="${GB}[ ON ]"
 else
-status_xray="${RB}[ OFF ]${NC}"
+status_xray="${RB}[ OFF ]"
 fi
 if [[ $nginx_service == "running" ]]; then
-status_nginx="${GB}[ ON ]${NC}"
+status_nginx="${GB}[ ON ]"
 else
-status_nginx="${RB}[ OFF ]${NC}"
+status_nginx="${RB}[ OFF ]"
 fi
 dtoday="$(vnstat | grep today | awk '{print $2" "substr ($3, 1, 3)}')"
 utoday="$(vnstat | grep today | awk '{print $5" "substr ($6, 1, 3)}')"
@@ -32,44 +33,45 @@ WKT=$(cat /usr/local/etc/xray/timezone)
 DATE=$(date -R | cut -d " " -f -4)
 MYIP=$(curl -sS ipv4.icanhazip.com)
 clear
-echo -e "${BB}╒═══════════════════════════════════════════════════════╕${NC}"
-echo -e "${BB}║${NC}        ${WB}----- [ Xray Script By ST4NGKUDUT ] -----${NC}      ${BB}║${NC} "
-echo -e "${BB}╒══════════════════════════════════════════════════════╕${NC}"
-echo -e "${BB}║${NC} ${YB}Public IP${NC}        ${WB}: $MYIP                    ${BB}║${NC} "
-echo -e "${BB}║${NC} ${YB}Service Provider${NC} ${WB}: $ISP             ${BB}║${NC}  "
-echo -e "${BB}║${NC} ${YB}Timezone${NC}         ${WB}: $WKT${NC}                     ${BB}║${NC}  "
-echo -e "${BB}║${NC} ${YB}City${NC}             ${WB}: $CITY${NC}                          ${BB}║${NC}  "
-echo -e "${BB}║${NC} ${YB}Date${NC}             ${WB}: $DATE${NC}                   ${BB}║${NC}  "
-echo -e "${BB}║${NC} ${YB}Domain${NC}           ${WB}: $domain${NC}               ${BB}║${NC}  "
-echo -e "${BB}╒══════════════════════════════════════════════════════╕${NC}"
-echo -e "${BB}║${NC}     ${WB}NGINX STATUS :${NC} $status_nginx    ${WB}XRAY STATUS :${NC} $status_xray     ${BB}║${NC}"
-echo -e "${BB}╒══════════════════════════════════════════════════════╕${NC}"
-echo -e "${BB}║${NC}          ${WB}----- [ Bandwidth Monitoring ] -----${NC}         ${BB}║${NC}  "
-echo -e "${BB}║${NC}                                                       ${BB}║${NC} "
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║${BW}        ----- [ Xray Script By ST4NGKUDUT ] -----      ${NC}${BB}║${NC} "
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
+echo -e "${BB}║${NC} ${CB}Public IP${NC}        ${WB}: $MYIP                    ${BB}║${NC} "
+echo -e "${BB}║${NC} ${CB}Service Provider${NC} ${WB}: $ISP             ${BB}║${NC}  "
+echo -e "${BB}║${NC} ${CB}Timezone${NC}         ${WB}: $WKT${NC}                     ${BB}║${NC}  "
+echo -e "${BB}║${NC} ${CB}City${NC}             ${WB}: $CITY${NC}                          ${BB}║${NC}  "
+echo -e "${BB}║${NC} ${CB}Date${NC}             ${WB}: $DATE${NC}                   ${BB}║${NC}  "
+echo -e "${BB}║${NC} ${CB}Domain${NC}           ${WB}: $domain${NC}               ${BB}║${NC}  "
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║${BW}          ----- [ Bandwidth Monitoring ] -----         ${NC}${BB}║${NC}  "
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo -e "${BB}║${NC}  ${WB}Today ($DATE)     Monthly ($(date +%B/%Y))${NC} ${BB}║${NC} "
-echo -e "${BB}╒══════════════════════════════════════════════════════╕${NC}"
-echo -e "${BB}║${NC}    ${YB}↓↓ Down: $dtoday          ↓↓ Down: $dmon${NC}       ${BB}║${NC}"
-echo -e "${BB}║${NC}    ${YB}↑↑ Up  : $utoday          ↑↑ Up  : $umon${NC}       ${BB}║${NC} "
-echo -e "${BB}║${NC}    ${YB}≈ Total: $ttoday          ≈ Total: $tmon${NC}     ${BB}║${NC} "
-echo -e "${BB}╒══════════════════════════════════════════════════════╕${NC}"
-echo -e "${BB}║${NC}                ${WB}----- [ Xray Menu ] -----${NC}              ${BB}║${NC} "
-echo -e "${BB}╒══════════════════════════════════════════════════════╕${NC}"
-echo -e "${BB}║${NC} ${MB}[1]${NC} ${YB}Vmess Menu${NC}          ${MB}[5]${NC} ${YB}Shadowsocks 2022 Menu${NC}     ${BB}║${NC} "
-echo -e "${BB}║${NC} ${MB}[2]${NC} ${YB}Vless Menu${NC}          ${MB}[6]${NC} ${YB}Socks5 Menu${NC}               ${BB}║${NC} "
-echo -e "${BB}║${NC} ${MB}[3]${NC} ${YB}Trojan Menu${NC}         ${MB}[7]${NC} ${YB}All Xray Menu${NC}             ${BB}║${NC}"
-echo -e "${BB}║${NC} ${MB}[4]${NC} ${YB}Shadowsocks Menu${NC}                  ║ "
-echo -e "${BB}╒══════════════════════════════════════════════════════╕${NC}"
-echo -e "${BB}║${NC}                 ${WB}----- [ Utility ] -----${NC}               ${BB}║${NC}"
-echo -e "${BB}╒══════════════════════════════════════════════════════╕${NC}"
-echo -e "${BB}║${NC} ${MB}[8]${NC} ${YB}Log Create Account${NC}  ${MB}[14]${NC} ${YB}VPS Backup${NC}               ${BB}║${NC}"
-echo -e "${BB}║${NC} ${MB}[9]${NC} ${YB}Speedtest${NC}           ${MB}[15]${NC} ${YB}Check DNS Status${NC}         ${BB}║${NC}"
-echo -e "${BB}║${NC} ${MB}[10]${NC} ${YB}Change Domain${NC}      ${MB}[16]${NC} ${YB}Change Xray-core Mod${NC}     ${BB}║${NC}"
-echo -e "${BB}║${NC} ${MB}[11]${NC} ${YB}Renew Cert${NC}         ${MB}[17]${NC} ${YB}Change Xray-core Official${NC}${BB}║${NC}"
-echo -e "${BB}║${NC} ${MB}[12]${NC} ${YB}About Script${NC}       ${MB}[18]${NC} ${YB}Restart XRAY${NC}             ${BB}║${NC}"
-echo -e "${BB}║${NC} ${MB}[13]${NC} ${YB}DNS Setting${NC}        ${MB}[19]${NC} ${YB}Reboot VPS${NC}               ${BB}║${NC}"
-echo -e "${BB}║${NC}                                                       ${BB}║${NC} "
-echo -e "${BB}║${NC} ${MB}[x]${NC} ${YB}Exit Menu${NC}                                         ${BB}║${NC}"
-echo -e "${BB}════════════════════════════════════════════════════════${NC}"
+echo -e "${BB}║${NC}    ${CB}↓↓ Down: $dtoday          ↓↓ Down: $dmon${NC}       ${BB}║${NC}"
+echo -e "${BB}║${NC}    ${CB}↑↑ Up  : $utoday          ↑↑ Up  : $umon${NC}       ${BB}║${NC} "
+echo -e "${BB}║${NC}    ${CB}≈ Total: $ttoday         ≈ Total: $tmon${NC}      ${BB}║${NC} "
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║${BW}              ----- [ Xray Menu ] -----                ${NC}${BB}║${NC} "
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
+echo -e "${BB}║${NC} ${GB}[1]${NC} ${YB}Vmess Menu${NC}          ${GB}[5]${NC} ${YB}Shadowsocks 2022 Menu${NC}     ${BB}║${NC} "
+echo -e "${BB}║${NC} ${GB}[2]${NC} ${YB}Vless Menu${NC}          ${GB}[6]${NC} ${YB}Socks5 Menu${NC}               ${BB}║${NC} "
+echo -e "${BB}║${NC} ${GB}[3]${NC} ${YB}Trojan Menu${NC}         ${GB}[7]${NC} ${YB}All Xray Menu${NC}             ${BB}║${NC}"
+echo -e "${BB}║${NC} ${GB}[4]${NC} ${YB}Shadowsocks Menu${NC}                                  ${BB}║${NC}"
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║${BW}               ----- [ Utility ] -----                 ${NC}${BB}║${NC}"
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
+echo -e "${BB}║${NC} ${GB}[8]${NC} ${YB}Log Create Account${NC}  ${GB}[14]${NC} ${YB}VPS Backup${NC}               ${BB}║${NC}"
+echo -e "${BB}║${NC} ${GB}[9]${NC} ${YB}Speedtest${NC}           ${GB}[15]${NC} ${YB}Check DNS Status${NC}         ${BB}║${NC}"
+echo -e "${BB}║${NC} ${GB}[10]${NC} ${YB}Change Domain${NC}      ${GB}[16]${NC} ${YB}Change Xray-core Mod${NC}     ${BB}║${NC}"
+echo -e "${BB}║${NC} ${GB}[11]${NC} ${YB}Renew Cert${NC}         ${GB}[17]${NC} ${YB}Change Xray-core Official${NC}${BB}║${NC}"
+echo -e "${BB}║${NC} ${GB}[12]${NC} ${YB}About Script${NC}       ${GB}[18]${NC} ${YB}Restart XRAY${NC}             ${BB}║${NC}"
+echo -e "${BB}║${NC} ${GB}[13]${NC} ${YB}DNS Setting${NC}        ${GB}[19]${NC} ${YB}Reboot VPS${NC}               ${BB}║${NC}"
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║${BW}                ----- [ Exit Menu ] -----              ${NC}${BB}║${NC}"
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
+echo -e "${BB}║${NC}                ${RB}         PRESS X         ${NC}              ${BB}║${NC}"
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║${BW}     NGINX STATUS : $status_nginx    ${BW}XRAY STATUS :    $status_xray ${NC}${BB}║${NC}"
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo -e ""
 
 echo -e ""
