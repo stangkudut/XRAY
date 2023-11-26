@@ -64,7 +64,7 @@ echo -e "${BB}══════════════════════
 echo -e "${BB}║${NC} ${MB}[8]${NC} ${YB}Log Create Account${NC}  ${MB}[14]${NC} ${YB}VPS Backup${NC}               ${BB}║${NC}"
 echo -e "${BB}║${NC} ${MB}[9]${NC} ${YB}Speedtest${NC}           ${MB}[15]${NC} ${YB}Check DNS Status${NC}         ${BB}║${NC}"
 echo -e "${BB}║${NC} ${MB}[10]${NC} ${YB}Change Domain${NC}      ${MB}[16]${NC} ${YB}Change Xray-core Mod${NC}     ${BB}║${NC}"
-echo -e "${BB}║${NC} ${MB}[11]${NC} ${YB}Renew Cert${NC}         ${MB}[17]${NC} ${YB}Change Xray-core Official${NC} ${BB}║${NC}"
+echo -e "${BB}║${NC} ${MB}[11]${NC} ${YB}Renew Cert${NC}         ${MB}[17]${NC} ${YB}Change Xray-core Official${NC}${BB}║${NC}"
 echo -e "${BB}║${NC} ${MB}[12]${NC} ${YB}About Script${NC}       ${MB}[18]${NC} ${YB}Restart XRAY${NC}             ${BB}║${NC}"
 echo -e "${BB}║${NC} ${MB}[13]${NC} ${YB}DNS Setting${NC}        ${MB}[19]${NC} ${YB}Reboot VPS${NC}               ${BB}║${NC}"
 echo -e "${BB}║${NC}                                                       ${BB}║${NC} "
