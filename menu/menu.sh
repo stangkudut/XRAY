@@ -70,7 +70,7 @@ echo -e "${BB}║${BW}                ----- [ Exit Menu ] -----              ${N
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo -e "${BB}║${NC}                ${RB}         PRESS X         ${NC}              ${BB}║${NC}"
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "${BB}║${BW}     NGINX STATUS : $status_nginx    ${BW}XRAY STATUS :    $status_xray ${NC}${BB}║${NC}"
+echo -e "${BB}║${BW}     NGINX STATUS : $status_nginx    ${BW}XRAY STATUS :    $status_xray ${NC}${BB} ║${NC}"
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo -e ""
 
