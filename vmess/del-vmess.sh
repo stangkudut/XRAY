@@ -7,12 +7,13 @@ BB='\e[34;1m'
 MB='\e[35;1m'
 CB='\e[35;1m'
 WB='\e[37;1m'
+BW='\e[30;48;5;15m'
 clear
 NUMBER_OF_CLIENTS=$(grep -c -E "^#@ " "/usr/local/etc/xray/config.json")
 if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "${BB}║${BW}        ----- [ Delete Vmess Account ] -----               ${NC}${BB}║${NC} "
+echo -e "${BB}║${BW}        ----- [ Delete Vmess Account ] -----           ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo -e "  ${YB}You have no existing clients!${NC}"
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
@@ -21,7 +22,7 @@ vmess
 fi
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "${BB}║${BW}        ----- [ Delete Vmess Account ] -----               ${NC}${BB}║${NC} "
+echo -e "${BB}║${BW}        ----- [ Delete Vmess Account ] -----           ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo -e " ${YB}User  Expired${NC}  "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
