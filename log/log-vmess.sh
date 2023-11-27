@@ -15,7 +15,7 @@ clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║${BW}            ----- [ Log Vmess Menu ] -----             ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
-echo -e "  ${YB}You have no existing clients!${NC}"
+echo -e "${BB}║        ${RB}You have no existing clients!${NC}"            ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
