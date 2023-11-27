@@ -21,7 +21,7 @@ clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║${BW}          ----- [ Add Vmess Account ] -----            ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
-echo -e "${YB}A client with the specified name was already created, please choose another name.${NC}"
+echo -e "${BB}║${RB}A client with the specified name was already created, please choose another name.${NC}"
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 add-vmess
@@ -172,14 +172,19 @@ echo -e "Path          : /(multipath) • ubah suka-suka" | tee -a /user/log-vme
 echo -e "ServiceName   : vmess-grpc" | tee -a /user/log-vmess-$user.txt
 echo -e "Alpn          : h2, http/1.1" | tee -a /user/log-vmess-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "Link TLS      : $vmesslink1" | tee -a /user/log-vmess-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "Link NTLS     : $vmesslink2" | tee -a /user/log-vmess-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "Link gRPC     : $vmesslink3" | tee -a /user/log-vmess-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "Format Clash  : http://$domain:8000/vmess/vmess-$user.txt" | tee -a /user/log-vmess-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "Expired On    : $exp" | tee -a /user/log-vmess-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
 echo " " | tee -a /user/log-vmess-$user.txt
