@@ -187,6 +187,9 @@ echo -e "${BB}╚═════════════════════
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "Expired On    : $exp" | tee -a /user/log-vmess-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║                  ${RB}Tap Enter To Go Back                 ${BB}║${NC} "
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo " " | tee -a /user/log-vmess-$user.txt
 echo " " | tee -a /user/log-vmess-$user.txt
 echo " " | tee -a /user/log-vmess-$user.txt
