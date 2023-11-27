@@ -15,7 +15,7 @@ clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║${BW}        ----- [ Delete Vmess Account ] -----           ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
-echo -e "  ${YB}You have no existing clients!${NC}"
+echo -e "${BB}║        ${RB}You have no existing clients!${NC}"            ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 vmess
@@ -24,7 +24,7 @@ clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║${BW}        ----- [ Delete Vmess Account ] -----           ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
-echo -e " ${YB}User  Expired${NC}  "
+echo -e "${BB}║${WB}User  Expired${NC}  "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 grep -E "^#@ " "/usr/local/etc/xray/config.json" | cut -d ' ' -f 2-3 | column -t | sort | uniq
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
