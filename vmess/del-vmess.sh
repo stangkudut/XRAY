@@ -41,7 +41,7 @@ rm -rf /user/log-vmess-$user.txt
 systemctl restart xray
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "${BB}║${BW}     ----- [ Vmess Account has been Deleted ] -----        ${NC}${BB}║${NC} "
+echo -e "${BB}║${BW}    ----- [ Vmess Account has been Deleted ] -----     ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo -e " ${YB}Client Name :${NC} $user"
 echo -e " ${YB}Expired On  :${NC} $exp"
