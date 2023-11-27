@@ -45,12 +45,14 @@ exp4=`date -d "$exp3 days" +"%Y-%m-%d"`
 sed -i "/#@ $user/c\#@ $user $exp4" /usr/local/etc/xray/config.json
 systemctl restart xray
 clear
-echo -e "${BB}————————————————————————————————————————————————————${NC}"
-echo -e "           ${WB}Vmess Account Success Extended${NC}            "
-echo -e "${BB}————————————————————————————————————————————————————${NC}"
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║${BW}     ----- [ Vmess Account was Extended ] -----        ${NC}${BB}║${NC} "
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo -e " ${YB}Client Name :${NC} $user"
 echo -e " ${YB}Expired On  :${NC} $exp4"
-echo -e "${BB}————————————————————————————————————————————————————${NC}"
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║                  ${RB}Tap Enter To Go Back                 ${BB}║${NC} "
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 clear
