@@ -7,21 +7,22 @@ BB='\e[34;1m'
 MB='\e[35;1m'
 CB='\e[35;1m'
 WB='\e[37;1m'
+BW='\e[30;48;5;15m'
 clear
 domain=$(cat /usr/local/etc/xray/domain)
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
-echo -e "${BB}————————————————————————————————————————————————————${NC}"
-echo -e "                 ${WB}Add Vmess Account${NC}                  "
-echo -e "${BB}————————————————————————————————————————————————————${NC}"
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║${BW}          ----- [ Add Vmess Account ] -----            ${NC}${BB}║${NC} "
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 read -rp "User: " -e user
 CLIENT_EXISTS=$(grep -w $user /usr/local/etc/xray/config.json | wc -l)
 if [[ ${CLIENT_EXISTS} == '1' ]]; then
 clear
-echo -e "${BB}————————————————————————————————————————————————————${NC}"
-echo -e "                 ${WB}Add Vmess Account${NC}                  "
-echo -e "${BB}————————————————————————————————————————————————————${NC}"
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║${BW}          ----- [ Add Vmess Account ] -----            ${NC}${BB}║${NC} "
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo -e "${YB}A client with the specified name was already created, please choose another name.${NC}"
-echo -e "${BB}————————————————————————————————————————————————————${NC}"
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 add-vmess
 fi
@@ -150,9 +151,9 @@ ISP=$(cat /usr/local/etc/xray/org)
 CITY=$(cat /usr/local/etc/xray/city)
 systemctl restart xray
 clear
-echo -e "————————————————————————————————————————————————————${NC}" | tee -a /user/log-vmess-$user.txt
-echo -e "                   Vmess Account                    " | tee -a /user/log-vmess-$user.txt
-echo -e "————————————————————————————————————————————————————${NC}" | tee -a /user/log-vmess-$user.txt
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}" | tee -a /user/log-vmess-$user.txt
+echo -e "${BB}║${BW}            ----- [ Vmess Account ] -----              ${NC}${BB}║${NC} " | tee -a /user/log-vmess-$user.txt
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
 echo -e "Remarks       : $user" | tee -a /user/log-vmess-$user.txt
 echo -e "ISP           : $ISP" | tee -a /user/log-vmess-$user.txt
 echo -e "City          : $CITY" | tee -a /user/log-vmess-$user.txt
@@ -170,17 +171,17 @@ echo -e "Network       : Websocket" | tee -a /user/log-vmess-$user.txt
 echo -e "Path          : /(multipath) • ubah suka-suka" | tee -a /user/log-vmess-$user.txt
 echo -e "ServiceName   : vmess-grpc" | tee -a /user/log-vmess-$user.txt
 echo -e "Alpn          : h2, http/1.1" | tee -a /user/log-vmess-$user.txt
-echo -e "————————————————————————————————————————————————————${NC}" | tee -a /user/log-vmess-$user.txt
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
 echo -e "Link TLS      : $vmesslink1" | tee -a /user/log-vmess-$user.txt
-echo -e "————————————————————————————————————————————————————${NC}" | tee -a /user/log-vmess-$user.txt
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
 echo -e "Link NTLS     : $vmesslink2" | tee -a /user/log-vmess-$user.txt
-echo -e "————————————————————————————————————————————————————${NC}" | tee -a /user/log-vmess-$user.txt
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
 echo -e "Link gRPC     : $vmesslink3" | tee -a /user/log-vmess-$user.txt
-echo -e "————————————————————————————————————————————————————${NC}" | tee -a /user/log-vmess-$user.txt
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
 echo -e "Format Clash  : http://$domain:8000/vmess/vmess-$user.txt" | tee -a /user/log-vmess-$user.txt
-echo -e "————————————————————————————————————————————————————${NC}" | tee -a /user/log-vmess-$user.txt
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
 echo -e "Expired On    : $exp" | tee -a /user/log-vmess-$user.txt
-echo -e "————————————————————————————————————————————————————${NC}" | tee -a /user/log-vmess-$user.txt
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
 echo " " | tee -a /user/log-vmess-$user.txt
 echo " " | tee -a /user/log-vmess-$user.txt
 echo " " | tee -a /user/log-vmess-$user.txt
