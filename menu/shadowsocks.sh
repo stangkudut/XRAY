@@ -7,20 +7,19 @@ BB='\e[34;1m'
 MB='\e[35;1m'
 CB='\e[35;1m'
 WB='\e[37;1m'
+BW='\e[30;48;5;15m'
 clear
-echo -e "${BB}————————————————————————————————————————————————————————${NC}"
-echo -e "             ${WB}----- [ Shadowsocks Menu ] -----${NC}           "
-echo -e "${BB}————————————————————————————————————————————————————————${NC}"
-echo -e ""
-echo -e " ${MB}[1]${NC} ${YB}Create Account Shadowsocks${NC} "
-echo -e " ${MB}[2]${NC} ${YB}Trial Account Shadowsocks${NC} "
-echo -e " ${MB}[3]${NC} ${YB}Extend Account Shadowsocks${NC} "
-echo -e " ${MB}[4]${NC} ${YB}Delete Account Shadowsocks${NC} "
-echo -e " ${MB}[5]${NC} ${YB}Check User Login${NC} "
-echo -e ""
-echo -e " ${MB}[0]${NC} ${YB}Back To Menu${NC}"
-echo -e ""
-echo -e "${BB}————————————————————————————————————————————————————————${NC}"
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║${BW}           ----- [ shadowsocks Menu ] -----            ${NC}${BB}║${NC} "
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
+echo -e "${BB}║${NC}   ${RB}[1]${NC} ${GB}Create Account shadowsocks${NC}                      ${BB}║${NC}"
+echo -e "${BB}║${NC}   ${RB}[2]${NC} ${GB}Trial Account shadowsocks${NC}                       ${BB}║${NC}"
+echo -e "${BB}║${NC}   ${RB}[3]${NC} ${GB}Extend Account shadowsocks${NC}                      ${BB}║${NC}"
+echo -e "${BB}║${NC}   ${RB}[4]${NC} ${GB}Delete Account shadowsocks${NC}                      ${BB}║${NC}"
+echo -e "${BB}║${NC}   ${RB}[5]${NC} ${GB}Check User Login${NC}                                ${BB}║${NC}"
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║                   ${RB}[0]${NC} Back To Menu                    ${BB}║${NC}"
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo -e ""
 read -p " Select menu :  "  opt
 echo -e ""
