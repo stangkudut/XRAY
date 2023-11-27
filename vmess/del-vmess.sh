@@ -24,7 +24,7 @@ clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║${BW}        ----- [ Delete Vmess Account ] -----           ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
-echo -e "${BB}║${WB}User  Expired${NC}  "
+echo -e "${BB}║${CB}User       ${RB}Expired${NC}                                     ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 grep -E "^#@ " "/usr/local/etc/xray/config.json" | cut -d ' ' -f 2-3 | column -t | sort | uniq
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
