@@ -1,18 +1,20 @@
 #!/bin/bash
 # ==========================================
 # Color
-RED='\033[0;31m'
-NC='\033[0m'
-GREEN='\033[0;32m'
-ORANGE='\033[0;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-LIGHT='\033[0;37m'
+NC='\e[0m'
+DEFBOLD='\e[39;1m'
+RB='\e[31;1m'
+GB='\e[32;1m'
+YB='\e[33;1m'
+BB='\e[34;1m'
+MB='\e[35;1m'
+CB='\e[36;1m'
+WB='\e[37;1m'
+BW='\e[30;48;5;15m'
 # ==========================================
 #information
-OK="${GREEN}[OK]${NC}"
-Error="${RED}[Mistake]${NC}"
+OK="${GB}[OK]${NC}"
+Error="${RB}[Mistake]${NC}"
 clear
 echo -e "${OK}Please Wait..."
 systemctl daemon-reload
