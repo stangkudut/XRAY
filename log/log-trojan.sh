@@ -13,7 +13,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#& " "/usr/local/etc/xray/config.json")
 if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "${BB}║${BW}            ----- [ Log Trojan Menu ] -----            ${NC}${BB}║${NC} "
+echo -e "${BB}║${BW}          ----- [ Log Trojan Account ] -----           ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo -e "${BB}║             ${RB}You have no existing clients!${NC}             ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
