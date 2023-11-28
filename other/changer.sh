@@ -7,25 +7,26 @@ BB='\e[34;1m'
 MB='\e[35;1m'
 CB='\e[35;1m'
 WB='\e[37;1m'
+BW='\e[30;48;5;15m'
 clear
-echo -e "${BB}————————————————————————————————————————————————————————${NC}"
-echo -e "               ${WB}----- [ DNS Setting ] -----${NC}              "
-echo -e "${BB}————————————————————————————————————————————————————————${NC}"
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║${BW}              ----- [ DNS SETTING ] -----              ${NC}${BB}║${NC} "
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 udns=$(cat /user/current)
-echo -e ""
-echo -e "  ${YB}Current DNS${NC} : ${GB}$udns${WB}"
-echo -e ""
-echo -e " ${MB}[1]${NC} ${YB}Google DNS${NC}"
-echo -e " ${MB}[2]${NC} ${YB}Cloudflare DNS${NC}"
-echo -e " ${MB}[3]${NC} ${YB}Cisco OpenDNS${NC}"
-echo -e " ${MB}[4]${NC} ${YB}Quad9 DNS${NC}"
-echo -e " ${MB}[5]${NC} ${YB}Level 3 DNS${NC}"
-echo -e " ${MB}[6]${NC} ${YB}Freenom World DNS${NC}"
-echo -e " ${MB}[7]${NC} ${YB}Neustar DNS${NC}"
-echo -e " ${MB}[8]${NC} ${YB}AdGuard DNS${NC}"
-echo -e " ${MB}[9]${NC} ${YB}Custom DNS${NC}"
-echo -e ""
-echo -e " ${MB}[10]${NC} ${YB}Back To Main Menu${NC}"
+echo -e "${BB}║ ${YB}Current DNS${NC} : ${GB}$udns${WB}                             
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║ ${MB}[1]${NC} ${YB}Google DNS${NC}                                        ${BB}║${NC}"
+echo -e "${BB}║ ${MB}[2]${NC} ${YB}Cloudflare DNS${NC}                                    ${BB}║${NC}"
+echo -e "${BB}║ ${MB}[3]${NC} ${YB}Cisco OpenDNS${NC}                                     ${BB}║${NC}"
+echo -e "${BB}║ ${MB}[4]${NC} ${YB}Quad9 DNS${NC}                                         ${BB}║${NC}"
+echo -e "${BB}║ ${MB}[5]${NC} ${YB}Level 3 DNS${NC}                                       ${BB}║${NC}"
+echo -e "${BB}║ ${MB}[6]${NC} ${YB}Freenom World DNS${NC}                                 ${BB}║${NC}"
+echo -e "${BB}║ ${MB}[7]${NC} ${YB}Neustar DNS${NC}                                       ${BB}║${NC}"
+echo -e "${BB}║ ${MB}[8]${NC} ${YB}AdGuard DNS${NC}                                       ${BB}║${NC}"
+echo -e "${BB}║ ${MB}[9]${NC} ${YB}Custom DNS${NC}                                        ${BB}║${NC}"
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║                   ${RB}[0]${NC} Back To Menu                    ${BB}║${NC}"
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo ""
 read -p "Select From Options [ 1 - 9 ] : " dns
 echo -e ""
@@ -173,6 +174,6 @@ systemctl restart NetworkManager
 echo "Custom DNS" > /user/current
 echo -e "${YB}Setup Completed${NC}"
 sleep 1.5 ; clear ; changer ;;
-10) clear ; menu ;;
+0) clear ; menu ;;
 *) echo -e "${YB}Please enter an correct number${NC}" ; sleep 1 ; changer ;;
 esac
