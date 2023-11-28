@@ -5,24 +5,23 @@ GB='\e[32;1m'
 YB='\e[33;1m'
 BB='\e[34;1m'
 MB='\e[35;1m'
-CB='\e[35;1m'
+CB='\e[36;1m'
 WB='\e[37;1m'
+BW='\e[30;48;5;15m'
 clear
-echo -e "${BB}————————————————————————————————————————————————————${NC}"
-echo -e "                  ${WB}Log Create User${NC}                   "
-echo -e "${BB}————————————————————————————————————————————————————${NC}"
-echo -e ""
-echo -e " ${MB}[1]${NC} ${YB}Log Vmess Account${NC} "
-echo -e " ${MB}[2]${NC} ${YB}Log Vless Account${NC} "
-echo -e " ${MB}[3]${NC} ${YB}Log Trojan Account${NC} "
-echo -e " ${MB}[4]${NC} ${YB}Log Shadowsocks Account${NC}"
-echo -e " ${MB}[5]${NC} ${YB}Log Shadowsocks 2022 Account${NC}"
-echo -e " ${MB}[6]${NC} ${YB}Log Socks5 Account${NC}"
-echo -e " ${MB}[7]${NC} ${YB}Log All Xray Account${NC}"
-echo -e ""
-echo -e " ${MB}[0]${NC} ${YB}Back To Menu${NC}"
-echo -e ""
-echo -e "${BB}————————————————————————————————————————————————————${NC}"
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║${BW}            ----- [ Log Create User ] -----            ${NC}${BB}║${NC} "
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
+echo -e "${BB}║${RB}[1]${NC} ${WB}Log Vmess Account${NC}                                  ${BB}║${NC}"
+echo -e "${BB}║${RB}[2]${NC} ${WB}Log Vless Account${NC}                                  ${BB}║${NC}"
+echo -e "${BB}║${RB}[3]${NC} ${WB}Log Trojan Account${NC}                                 ${BB}║${NC}"
+echo -e "${BB}║${RB}[4]${NC} ${WB}Log Shadowsocks Account${NC}                            ${BB}║${NC}"
+echo -e "${BB}║${RB}[5]${NC} ${WB}Log Shadowsocks 2022 Account${NC}                       ${BB}║${NC}"
+echo -e "${BB}║${RB}[6]${NC} ${WB}Log Socks5 Account${NC}                                 ${BB}║${NC}"
+echo -e "${BB}║${RB}[7]${NC} ${WB}Log All Xray Account${NC}                               ${BB}║${NC}"
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║                   ${RB}[0]${NC} Back To Menu                    ${BB}║${NC}"
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo -e ""
 read -p " Select menu :  "  opt
 echo -e ""
