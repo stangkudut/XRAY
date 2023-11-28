@@ -66,7 +66,7 @@ echo -e "${BB}║${NC} ${RB}[11]${NC} ${WB}Renew Cert${NC}         ${RB}[17]${NC
 echo -e "${BB}║${NC} ${RB}[12]${NC} ${WB}About Script${NC}       ${RB}[18]${NC} ${WB}Restart XRAY${NC}             ${BB}║${NC}"
 echo -e "${BB}║${NC} ${RB}[13]${NC} ${WB}DNS Setting${NC}        ${RB}[19]${NC} ${WB}Reboot VPS${NC}               ${BB}║${NC}"
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
-echo -e "${BB}║                    ${RB}[0]${NC} ${WB}Exit Script${NC}                    ${NC}${BB}║${NC}"
+echo -e "${BB}║                    ${RB}[x]${NC} ${WB}Exit Script${NC}                    ${NC}${BB}║${NC}"
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║${NC}     ${CB}NGINX STATUS${NC} : $status_nginx    ${CB}XRAY STATUS${NC} : $status_xray     ${NC}${BB}║${NC}"
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
