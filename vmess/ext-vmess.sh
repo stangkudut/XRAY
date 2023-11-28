@@ -14,7 +14,7 @@ if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║${BW}        ----- [ Extend Vmess Account ] -----           ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
-echo -e "${BB}║        ${RB}You have no existing clients!${NC}"            ${NC}${BB}║${NC} "
+echo -e "${BB}║        ${RB}You have no existing clients!${NC}            ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
