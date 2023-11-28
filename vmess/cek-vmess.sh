@@ -43,7 +43,6 @@ fi
 rm -rf /tmp/ipvmess.txt
 done
 rm -rf /tmp/other.txt
-echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║                  ${RB}Tap Enter To Go Back                 ${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo ""
