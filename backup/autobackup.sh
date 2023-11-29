@@ -112,7 +112,7 @@ clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║${BW}           ----- [ Auto Backup VPS ] -----             ${NC}${BB}║${NC} "
 echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
-echo -e "${BB}║${BW}                 ----- [ ${sts} ] -----                   ${NC}${BB}║${NC} "
+echo -e "${BB}║                 ----- [ ${sts} ] -----                  ${NC}${BB}║${NC} "
 echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
 echo -e "${BB}║${NC}   ${RB}[1]${NC} ${GB}Start Auto Backup${NC}                               ${BB}║${NC}"
 echo -e "${BB}║${NC}   ${RB}[2]${NC} ${GB}Stop Auto Backup${NC}                                ${BB}║${NC}"
