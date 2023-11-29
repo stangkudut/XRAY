@@ -37,8 +37,8 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user backupst4@gmail.com
-from backupst4@gmail.com
+user st4ngkudut@st4ngkudut.my.id
+from st4ngkudut@st4ngkudut.my.id
 password st4ngkudut
 logfile ~/.msmtp.log
 EOF
