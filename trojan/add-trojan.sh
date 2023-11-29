@@ -20,9 +20,9 @@ if [[ ${user_EXISTS} == '1' ]]; then
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║${BW}          ----- [ Add Trojan Account ] -----           ${NC}${BB}║${NC} "
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
 echo -e "${BB}║${RB}A client with the specified name was already created, please choose another name.${NC}"
-echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
 echo -e "${BB}║                  ${RB}Tap Enter To Go Back                 ${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
@@ -86,7 +86,7 @@ systemctl restart xray
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}" | tee -a /user/log-trojan-$user.txt
 echo -e "${BB}║${BW}            ----- [ Trojan Account ] -----             ${NC}${BB}║${NC} " | tee -a /user/log-trojan-$user.txt
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-trojan-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}" | tee -a /user/log-trojan-$user.txt
 echo -e "${BB}║${NC} Remarks       : ${user}" | tee -a /user/log-trojan-$user.txt
 echo -e "${BB}║${NC} ISP           : $ISP" | tee -a /user/log-trojan-$user.txt
 echo -e "${BB}║${NC} City          : $CITY" | tee -a /user/log-trojan-$user.txt
@@ -102,7 +102,7 @@ echo -e "${BB}║${NC} Network       : Websocket, gRPC" | tee -a /user/log-troja
 echo -e "${BB}║${NC} Path          : /trojan" | tee -a /user/log-trojan-$user.txt
 echo -e "${BB}║${NC} ServiceName   : trojan-grpc" | tee -a /user/log-trojan-$user.txt
 echo -e "${BB}║${NC} Alpn          : h2, http/1.1" | tee -a /user/log-trojan-$user.txt
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-trojan-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}" | tee -a /user/log-trojan-$user.txt
 echo -e "${BB}║${NC} Link TLS      : ${trojanlink1}" | tee -a /user/log-trojan-$user.txt
 echo -e "${BB}║═══════════════════════════════════════════════════════${NC}" | tee -a /user/log-trojan-$user.txt
 echo -e "${BB}║${NC} Link NTLS     : ${trojanlink2}" | tee -a /user/log-trojan-$user.txt
@@ -112,7 +112,7 @@ echo -e "${BB}║═════════════════════
 echo -e "${BB}║${NC} Format Clash  : http://$domain:8000/trojan/trojan-$user.txt" | tee -a /user/log-trojan-$user.txt
 echo -e "${BB}║═══════════════════════════════════════════════════════${NC}" | tee -a /user/log-trojan-$user.txt
 echo -e "${BB}║${NC} Expired On    : $exp" | tee -a /user/log-trojan-$user.txt
-echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}" | tee -a /user/log-trojan-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}" | tee -a /user/log-trojan-$user.txt
 echo -e "${BB}║                  ${RB}Tap Enter To Go Back                 ${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo " " | tee -a /user/log-trojan-$user.txt
