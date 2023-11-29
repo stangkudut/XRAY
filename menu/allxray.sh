@@ -25,7 +25,7 @@ read -p " Select menu :  "  opt
 echo -e ""
 case $opt in
 1) clear ; add-xray ; exit ;;
-2) clear ; trialxray ; exit ;;
+2) clear ; try-xray ; exit ;;
 3) clear ; ext-xray ; exit ;;
 4) clear ; del-xray ; exit ;;
 5) clear ; cek-xray ; exit ;;
