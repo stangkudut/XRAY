@@ -14,8 +14,10 @@ if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║${BW}         ----- [ Log All Xray Account ] -----          ${NC}${BB}║${NC} "
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
-echo -e "${BB}║             ${RB}You have no existing clients!${NC}             ${NC}${BB}║${NC} "
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
+echo -e "${BB}║                 ${RB}You have no existing clients!${NC}                 ${NC}${BB}║${NC} "
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
+echo -e "${BB}║                  ${RB}Tap Enter To Go Back                 ${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
@@ -24,8 +26,8 @@ fi
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║${BW}         ----- [ Log All Xray Account ] -----          ${NC}${BB}║${NC} "
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
-echo -e "${BB}║${CB}User       ${RB}Expired${NC}                                     ${NC}${BB}║${NC} "
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
+echo -e "${BB}║${WB}User       ${RB}Expired${NC}                                     ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 grep -E "^#&@ " "/usr/local/etc/xray/config.json" | cut -d ' ' -f 2-3 | column -t | sort | uniq
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
