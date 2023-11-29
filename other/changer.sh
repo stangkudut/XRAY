@@ -5,16 +5,16 @@ GB='\e[32;1m'
 YB='\e[33;1m'
 BB='\e[34;1m'
 MB='\e[35;1m'
-CB='\e[35;1m'
+CB='\e[36;1m'
 WB='\e[37;1m'
 BW='\e[30;48;5;15m'
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║${BW}              ----- [ DNS SETTING ] -----              ${NC}${BB}║${NC} "
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
 udns=$(cat /user/current)
 echo -e "${BB}║ ${YB}Current DNS${NC} : ${GB}$udns${WB}                             
-echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
 echo -e "${BB}║ ${MB}[1]${NC} ${YB}Google DNS${NC}                                        ${BB}║${NC}"
 echo -e "${BB}║ ${MB}[2]${NC} ${YB}Cloudflare DNS${NC}                                    ${BB}║${NC}"
 echo -e "${BB}║ ${MB}[3]${NC} ${YB}Cisco OpenDNS${NC}                                     ${BB}║${NC}"
@@ -24,7 +24,7 @@ echo -e "${BB}║ ${MB}[6]${NC} ${YB}Freenom World DNS${NC}                     
 echo -e "${BB}║ ${MB}[7]${NC} ${YB}Neustar DNS${NC}                                       ${BB}║${NC}"
 echo -e "${BB}║ ${MB}[8]${NC} ${YB}AdGuard DNS${NC}                                       ${BB}║${NC}"
 echo -e "${BB}║ ${MB}[9]${NC} ${YB}Custom DNS${NC}                                        ${BB}║${NC}"
-echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
 echo -e "${BB}║                   ${RB}[0]${NC} Back To Menu                    ${BB}║${NC}"
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo ""
