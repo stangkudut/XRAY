@@ -77,9 +77,9 @@ ISP=$(cat /usr/local/etc/xray/org)
 CITY=$(cat /usr/local/etc/xray/city)
 systemctl restart xray
 clear
-echo -e "————————————————————————————————————————————————————" | tee -a /user/log-vless-$user.txt
-echo -e "                 Trial Vless Account                " | tee -a /user/log-vless-$user.txt
-echo -e "————————————————————————————————————————————————————" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${BW}          ----- [ Try Vless Account ] -----            ${NC}${BB}║${NC}" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vless-$user.txt
 echo -e "Remarks       : ${user}" | tee -a /user/log-vless-$user.txt
 echo -e "Domain        : ${domain}" | tee -a /user/log-vless-$user.txt
 echo -e "ISP           : $ISP" | tee -a /user/log-vless-$user.txt
@@ -96,17 +96,25 @@ echo -e "Network       : Websocket" | tee -a /user/log-vless-$user.txt
 echo -e "Path          : /vless" | tee -a /user/log-vless-$user.txt
 echo -e "ServiceName   : vless-grpc" | tee -a /user/log-vless-$user.txt
 echo -e "Alpn          : h2, http/1.1" | tee -a /user/log-vless-$user.txt
-echo -e "————————————————————————————————————————————————————" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "Link TLS      : ${vlesslink1}" | tee -a /user/log-vless-$user.txt
-echo -e "————————————————————————————————————————————————————" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "Link NTLS     : ${vlesslink2}" | tee -a /user/log-vless-$user.txt
-echo -e "————————————————————————————————————————————————————" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "Link gRPC     : ${vlesslink3}" | tee -a /user/log-vless-$user.txt
-echo -e "————————————————————————————————————————————————————" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "Format Clash  : http://$domain:8000/vless/vless-$user.txt" | tee -a /user/log-vless-$user.txt
-echo -e "————————————————————————————————————————————————————" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "Expired On    : $exp" | tee -a /user/log-vless-$user.txt
-echo -e "————————————————————————————————————————————————————" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║                  ${RB}Tap Enter To Go Back                 ${BB}║${NC} "
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo " " | tee -a /user/log-vless-$user.txt
 echo " " | tee -a /user/log-vless-$user.txt
 echo " " | tee -a /user/log-vless-$user.txt
