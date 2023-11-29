@@ -87,22 +87,17 @@ echo -e "${BB}║${NC} Path          : /trojan" | tee -a /user/log-trojan-$user.
 echo -e "${BB}║${NC} ServiceName   : trojan-grpc" | tee -a /user/log-trojan-$user.txt
 echo -e "${BB}║${NC} Alpn          : h2, http/1.1" | tee -a /user/log-trojan-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-trojan-$user.txt
-echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "Link TLS      : ${trojanlink1}" | tee -a /user/log-trojan-$user.txt
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-trojan-$user.txt
-echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "Link NTLS     : ${trojanlink2}" | tee -a /user/log-trojan-$user.txt
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-trojan-$user.txt
-echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "Link gRPC     : ${trojanlink3}" | tee -a /user/log-trojan-$user.txt
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-trojan-$user.txt
-echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "Format Clash  : http://$domain:8000/trojan/trojan-$user.txt" | tee -a /user/log-trojan-$user.txt
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-trojan-$user.txt
-echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "Expired On    : $exp" | tee -a /user/log-trojan-$user.txt
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-trojan-$user.txt
-echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}╔════════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║${NC} Link TLS      : ${trojanlink1}" | tee -a /user/log-trojan-$user.txt
+echo -e "${BB}════════════════════════════════════════════════════════${NC}" | tee -a /user/log-trojan-$user.txt
+echo -e "${BB}║${NC} Link NTLS     : ${trojanlink2}" | tee -a /user/log-trojan-$user.txt
+echo -e "${BB}════════════════════════════════════════════════════════${NC}" | tee -a /user/log-trojan-$user.txt
+echo -e "${BB}║${NC} Link gRPC     : ${trojanlink3}" | tee -a /user/log-trojan-$user.txt
+echo -e "${BB}════════════════════════════════════════════════════════${NC}" | tee -a /user/log-trojan-$user.txt
+echo -e "${BB}║${NC} Format Clash  : http://$domain:8000/trojan/trojan-$user.txt" | tee -a /user/log-trojan-$user.txt
+echo -e "${BB}════════════════════════════════════════════════════════${NC}" | tee -a /user/log-trojan-$user.txt
+echo -e "${BB}║${NC} Expired On    : $exp" | tee -a /user/log-trojan-$user.txt
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}" | tee -a /user/log-trojan-$user.txt
 echo -e "${BB}║                  ${RB}Tap Enter To Go Back                 ${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo " " | tee -a /user/log-trojan-$user.txt
