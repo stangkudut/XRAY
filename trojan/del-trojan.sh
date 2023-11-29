@@ -41,10 +41,10 @@ rm -rf /user/log-trojan-$user.txt
 systemctl restart xray
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "${BB}║${BW}    ----- [ Vmess Account has been Deleted ] -----     ${NC}${BB}║${NC} "
+echo -e "${BB}║${BW}    ----- [ Trojan Account has been Deleted ] -----    ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
-echo -e "${BB}║ ${YB}Client Name :${NC} $user"
-echo -e "${BB}║ ${YB}Expired On  :${NC} $exp"
+echo -e "${BB}║ ${WB}Client Name :${NC} $user"
+echo -e "${BB}║ ${WB}Expired On  :${NC} $exp"
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║                  ${RB}Tap Enter To Go Back                 ${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
