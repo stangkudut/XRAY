@@ -10,9 +10,9 @@ WB='\e[37;1m'
 clear
 echo -n >/tmp/other.txt
 data=($(cat /usr/local/etc/xray/config.json | grep '^#=' | cut -d ' ' -f 2 | sort | uniq))
-echo -e "${BB}————————————————————————————————————————————————————${NC}"
-echo -e "              ${WB}Vless User Login Account${NC}              "
-echo -e "${BB}————————————————————————————————————————————————————${NC}"
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║${BW}          ----- [ Vless User Login ] -----             ${NC}${BB}║${NC} "
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 for akun in "${data[@]}"; do
 if [[ -z "$akun" ]]; then
 akun="Tidak Ada"
@@ -36,11 +36,14 @@ else
 jum2=$(cat /tmp/ipvmess.txt | nl)
 echo "user : $akun"
 echo "$jum2"
-echo -e "${BB}————————————————————————————————————————————————————${NC}"
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 fi
 rm -rf /tmp/ipvmess.txt
 done
 rm -rf /tmp/other.txt
+echo -e "${BB}║                  ${RB}Tap Enter To Go Back                 ${BB}║${NC} "
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 vless
