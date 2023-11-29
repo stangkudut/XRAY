@@ -104,37 +104,37 @@ clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}" | tee -a /user/log-vmess-$user.txt
 echo -e "${BB}║${BW}            ----- [ Vless Account ] -----              ${NC}${BB}║${NC} " | tee -a /user/log-vmess-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
-echo -e "Remarks       : ${user}" | tee -a /user/log-vless-$user.txt
-echo -e "Domain        : ${domain}" | tee -a /user/log-vless-$user.txt
-echo -e "ISP           : $ISP" | tee -a /user/log-vless-$user.txt
-echo -e "City          : $CITY" | tee -a /user/log-vless-$user.txt
-echo -e "Wildcard      : (bug.com).${domain}" | tee -a /user/log-vless-$user.txt
-echo -e "Port TLS      : 443" | tee -a /user/log-vless-$user.txt
-echo -e "Port NTLS     : 80" | tee -a /user/log-vless-$user.txt
-echo -e "Port gRPC     : 443" | tee -a /user/log-vless-$user.txt
-echo -e "Alt Port TLS  : 2053, 2083, 2087, 2096, 8443" | tee -a /user/log-vless-$user.txt
-echo -e "Alt Port NTLS : 8080, 8880, 2052, 2082, 2086, 2095" | tee -a /user/log-vless-$user.txt
-echo -e "id            : ${uuid}" | tee -a /user/log-vless-$user.txt
-echo -e "Encryption    : none" | tee -a /user/log-vless-$user.txt
-echo -e "Network       : Websocket, gRPC" | tee -a /user/log-vless-$user.txt
-echo -e "Path          : /vless" | tee -a /user/log-vless-$user.txt
-echo -e "ServiceName   : vless-grpc" | tee -a /user/log-vless-$user.txt
-echo -e "Alpn          : h2, http/1.1" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} Remarks       : ${user}" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} Domain        : ${domain}" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} ISP           : $ISP" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} City          : $CITY" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} Wildcard      : (bug.com).${domain}" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} Port TLS      : 443" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} Port NTLS     : 80" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} Port gRPC     : 443" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} Alt Port TLS  : 2053, 2083, 2087, 2096, 8443" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} Alt Port NTLS : 8080, 8880, 2052, 2082, 2086, 2095" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} id            : ${uuid}" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} Encryption    : none" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} Network       : Websocket, gRPC" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} Path          : /vless" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} ServiceName   : vless-grpc" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} Alpn          : h2, http/1.1" | tee -a /user/log-vless-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "Link TLS      : ${vlesslink1}" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} Link TLS      : ${vlesslink1}" | tee -a /user/log-vless-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "Link NTLS     : ${vlesslink2}" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} Link NTLS     : ${vlesslink2}" | tee -a /user/log-vless-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "Link gRPC     : ${vlesslink3}" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} Link gRPC     : ${vlesslink3}" | tee -a /user/log-vless-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "Format Clash  : http://$domain:8000/vless/vless-$user.txt" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} Format Clash  : http://$domain:8000/vless/vless-$user.txt" | tee -a /user/log-vless-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "Expired On    : $exp" | tee -a /user/log-vless-$user.txt
+echo -e "${BB}║${NC} Expired On    : $exp" | tee -a /user/log-vless-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-vmess-$user.txt
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║                  ${RB}Tap Enter To Go Back                 ${BB}║${NC} "
