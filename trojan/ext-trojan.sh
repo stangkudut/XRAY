@@ -15,8 +15,9 @@ echo -e "${BB}╔═════════════════════
 echo -e "${BB}║${BW}        ----- [ Extend Trojan Account ] -----          ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo -e "${BB}║        ${RB}You have no existing clients!${NC}            ${NC}${BB}║${NC} "
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║                  ${RB}Tap Enter To Go Back                 ${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
-echo ""
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 trojan
@@ -26,7 +27,6 @@ echo -e "${BB}╔═════════════════════
 echo -e "${BB}║${BW}        ----- [ Extend Trojan Account ] -----          ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo -e "${BB}║${CB}User       ${RB}Expired${NC}                                     ${NC}${BB}║${NC} "
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 grep -E "^#& " "/usr/local/etc/xray/config.json" | cut -d ' ' -f 2-3 | column -t | sort | uniq
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║                  ${RB}Tap Enter To Go Back                 ${BB}║${NC} "
