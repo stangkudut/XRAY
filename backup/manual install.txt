@@ -1,0 +1,1 @@
+wget https://raw.githubusercontent.com/stangkudut/XRAY/main/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
