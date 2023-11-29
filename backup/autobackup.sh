@@ -106,15 +106,15 @@ Tanggal : $date
 " | mail -s "Percobaan Pengiriman Email" $email
 }
 clear
-echo -e "=============================="
-echo -e "     Autobackup Data $sts     "
-echo -e "=============================="
-echo -e "1. Start Autobackup"
-echo -e "2. Stop Autobackup"
-echo -e "3. Ganti Email Penerima"
-echo -e "4. Ganti Email Pengirim"
-echo -e "5. Test kirim Email"
-echo -e "=============================="
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║${BW}              ----- [ Autobackup Data $sts ] -----               ${NC}${BB}║${NC} "
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
+echo -e "${BB}║${NC}   ${RB}[1]${NC} ${GB}Start Auto Backup${NC}                               ${BB}║${NC}"
+echo -e "${BB}║${NC}   ${RB}[2]${NC} ${GB}Stop Auto Backup${NC}                                ${BB}║${NC}"
+echo -e "${BB}║${NC}   ${RB}[3]${NC} ${GB}Ganti Email Penerima${NC}                            ${BB}║${NC}"
+echo -e "${BB}║${NC}   ${RB}[4]${NC} ${GB}Ganti Email Pengirim${NC}                            ${BB}║${NC}"
+echo -e "${BB}║${NC}   ${RB}[5]${NC} ${GB}Test Kirim Email${NC}                                ${BB}║${NC}"
+echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 read -rp "Please Enter The Correct Number : " -e num
 case $num in
 1)
