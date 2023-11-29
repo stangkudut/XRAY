@@ -16,6 +16,8 @@ echo -e "${BB}╔═════════════════════
 echo -e "${BB}║${BW}        ----- [ Delete Trojan Account ] -----          ${NC}${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo -e "${BB}║        ${RB}You have no existing clients!${NC}            ${NC}${BB}║${NC} "
+echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║                  ${RB}Tap Enter To Go Back                 ${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 trojan
