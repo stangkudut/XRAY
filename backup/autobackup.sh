@@ -10,6 +10,15 @@ BLUE='\033[0;34m'
 PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
+DEFBOLD='\e[39;1m'
+RB='\e[31;1m'
+GB='\e[32;1m'
+YB='\e[33;1m'
+BB='\e[34;1m'
+MB='\e[35;1m'
+CB='\e[36;1m'
+WB='\e[37;1m'
+BW='\e[30;48;5;15m'
 # ==========================================
 # Getting
 clear
@@ -44,10 +53,7 @@ echo " Please Wait"
 clear
 echo " Autobackup Has Been Started"
 echo " Data Will Be Backed Up Automatically at 00:05 GMT +7"
-sleep 2
-read -n 1 -s -r -p "Press any key to back on menu"
-clear
-backupvps
+exit 0
 }
 function stop() {
 email=$(cat /home/email)
@@ -58,10 +64,7 @@ sleep 1
 echo " Please Wait"
 clear
 echo " Autobackup Has Been Stopped"
-sleep 2
-read -n 1 -s -r -p "Press any key to back on menu"
-clear
-backupvps
+exit 0
 }
 
 function gantipenerima() {
@@ -107,7 +110,7 @@ Tanggal : $date
 }
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "${BB}║${BW}              ----- [ Autobackup Data $sts ] -----               ${NC}${BB}║${NC} "
+echo -e "${BB}║         ----- [ Autobackup Data ${sts} ] -----         ${NC}${BB}║${NC} "
 echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
 echo -e "${BB}║${NC}   ${RB}[1]${NC} ${GB}Start Auto Backup${NC}                               ${BB}║${NC}"
 echo -e "${BB}║${NC}   ${RB}[2]${NC} ${GB}Stop Auto Backup${NC}                                ${BB}║${NC}"
