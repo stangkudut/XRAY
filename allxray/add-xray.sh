@@ -11,9 +11,9 @@ BW='\e[30;48;5;15m'
 clear
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "${BB}║${BW}         ----- [ Creat All Xray Account ] -----         ${NC}${BB}║${NC}"
-echo -e "${BB}║${BW}         ----- [ VMESS - VLESS - TROJAN ] -----         ${NC}${BB}║${NC}"
-echo -e "${BB}║${BW} ----- [ SHADOWSOCKS 2022, SHADOWSOCKS, SOCKS5 ] -----  ${NC}${BB}║${NC}"
+echo -e "${BB}║${BW}         ----- [ Creat All Xray Account ] -----        ${NC}${BB}║${NC}"
+echo -e "${BB}║${BW}         ----- [ VMESS - VLESS - TROJAN ] -----        ${NC}${BB}║${NC}"
+echo -e "${BB}║${BW} ----- [ SHADOWSOCKS 2022, SHADOWSOCKS, SOCKS5 ] ----- ${NC}${BB}║${NC}"
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 read -rp "Username: " -e user
 CLIENT_EXISTS=$(grep -w $user /usr/local/etc/xray/config.json | wc -l)
@@ -21,9 +21,9 @@ if [[ ${CLIENT_EXISTS} == '1' ]]; then
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║${BW}       ----- [ Create All Xray Account ] -----          ${NC}${BB}║${NC}"
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
 echo -e "${BB}║${RB}A client with the specified name was already created, please choose another name.${NC}"
-echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
 echo -e "${BB}║                  ${RB}Tap Enter To Go Back                 ${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
@@ -38,9 +38,9 @@ if [[ ${CLIENT_EXISTS} == '1' ]]; then
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║${BW}       ----- [ Create All Xray Account ] -----          ${NC}${BB}║${NC}"
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
 echo -e "${BB}║${RB}A client with the specified name was already created, please choose another name.${NC}"
-echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
 echo -e "${BB}║                  ${RB}Tap Enter To Go Back                 ${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
@@ -236,10 +236,10 @@ END
 systemctl restart xray
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}║${BW}         ----- [ Creat All Xray Account ] -----         ${NC}${BB}║${NC}" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}║${BW}         ----- [ VMESS - VLESS - TROJAN ] -----         ${NC}${BB}║${NC}" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}║${BW} ----- [ SHADOWSOCKS 2022, SHADOWSOCKS, SOCKS5 ] -----  ${NC}${BB}║${NC}" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║${BW}         ----- [ Creat All Xray Account ] -----        ${NC}${BB}║${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║${BW}         ----- [ VMESS - VLESS - TROJAN ] -----        ${NC}${BB}║${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║${BW} ----- [ SHADOWSOCKS 2022, SHADOWSOCKS, SOCKS5 ] ----- ${NC}${BB}║${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Domain           : $domain" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Wildcard         : (bug.com).$domain" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} ISP              : $ISP" | tee -a /user/log-allxray-$user.txt
@@ -261,69 +261,68 @@ echo -e "${BB}║${NC} Expired On       : $exp" | tee -a /user/log-allxray-$user
 echo -e "${BB}║${NC} Link Akun        : http://$domain:8000/allxray/allxray-$user.txt" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${BW}              ----- [ Vmess Link ] -----               ${NC}${BB}║${NC} " | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link TLS   : $vmesslink1" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}════════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link NTLS  : $vmesslink2" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}════════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link gRPC  : $vmesslink3" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e " " | tee -a /user/log-allxray-$user.txt
 echo -e " " | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${BW}              ----- [ Vless Link ] -----               ${NC}${BB}║${NC} " | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link TLS   : $vlesslink1" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}════════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link NTLS  : $vlesslink2" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}════════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link gRPC  : $vlesslink3" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e " " | tee -a /user/log-allxray-$user.txt
 echo -e " " | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${BW}              ----- [ Trojan Link ] -----              ${NC}${BB}║${NC} " | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link TLS   : $trojanlink1" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}════════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link NTLS  : $trojanlink2" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}════════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link gRPC  : $trojanlink3" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e " " | tee -a /user/log-allxray-$user.txt
 echo -e " " | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${BW}         ----- [ Shadowsocks2022 Link ] -----          ${NC}${BB}║${NC} " | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link TLS   : $ss22link1" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}════════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link NTLS  : $ss22link2" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}════════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link gRPC  : $ss22link3" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e " " | tee -a /user/log-allxray-$user.txt
 echo -e " " | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${BW}           ----- [ Shadowsocks Link ] -----            ${NC}${BB}║${NC} " | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link TLS   : $shadowsockslink1" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}════════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link NTLS  : $shadowsockslink2" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}════════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link gRPC  : $shadowsockslink3" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e " " | tee -a /user/log-allxray-$user.txt
 echo -e " " | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${BW}              ----- [ Socks5 Link ] -----              ${NC}${BB}║${NC} " | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link TLS   : $sockslink1" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}════════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link NTLS  : $sockslink2" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}════════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║═══════════════════════════════════════════════════════${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${NC} Link gRPC  : $sockslink3" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║                  ${RB}Tap Enter To Go Back                 ${BB}║${NC} "
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo -e " " | tee -a /user/log-allxray-$user.txt
