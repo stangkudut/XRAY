@@ -5,8 +5,9 @@ GB='\e[32;1m'
 YB='\e[33;1m'
 BB='\e[34;1m'
 MB='\e[35;1m'
-CB='\e[35;1m'
+CB='\e[36;1m'
 WB='\e[37;1m'
+BW='\e[30;48;5;15m'
 clear
 domain=$(cat /usr/local/etc/xray/domain)
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
