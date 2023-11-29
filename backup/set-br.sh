@@ -16,7 +16,32 @@ export OKEY="[${GREEN} OKEY ${NC}]"
 export PENDING="[${YELLOW} PENDING ${NC}]"
 export SEND="[${YELLOW} SEND ${NC}]"
 export RECEIVE="[${YELLOW} RECEIVE ${NC}]"
+
+apt install rclone -y
+printf "q\n" | rclone config
+wget -O /root/.config/rclone/rclone.conf "https://${link}/rclone.conf"
+
+apt install msmtp-mta ca-certificates bsd-mailx -y
+cat<<EOF>>/etc/msmtprc
+defaults
+tls on
+tls_starttls on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+
+account default
+host smtp.st4ngkudut.my.id
+port 587
+auth on
+user st4ngkudut@st4ngkudut.my.id
+from st4ngkudut@st4ngkudut.my.id
+password st4ngkudut
+logfile ~/.msmtp.log
+EOF
+
+chown -R www-data:www-data /etc/msmtprc
+
 # ==========================================
+
 export SC=$( /usr/bin/mbackup )
 if [ "${SC}" -ne 1 ]; then
 echo -e "${INFO} Starting Replacing Script !"
