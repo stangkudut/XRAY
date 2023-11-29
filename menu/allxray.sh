@@ -26,7 +26,7 @@ echo -e ""
 case $opt in
 1) clear ; add-xray ; exit ;;
 2) clear ; trialxray ; exit ;;
-3) clear ; extend-xray ; exit ;;
+3) clear ; ext-xray ; exit ;;
 4) clear ; del-xray ; exit ;;
 5) clear ; cek-xray ; exit ;;
 0) clear ; menu ; exit ;;
