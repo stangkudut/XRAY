@@ -29,9 +29,6 @@ figlet "Backup" | lolcat
 echo "Mohon Menunggu , Proses Backup sedang berlangsung !!"
 rm -rf /root/backupvpsku
 mkdir /root/backupvpsku
-mkdir /root/backupvpsku/user
-mkdir /root/backupvpsku/usr/local/etc/xray
-mkdir /root/backupvpsku/var/www/html
 cp /etc/passwd backupvpsku/
 cp /etc/group backupvpsku/
 cp /etc/shadow backupvpsku/
