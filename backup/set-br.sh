@@ -19,7 +19,7 @@ export RECEIVE="[${YELLOW} RECEIVE ${NC}]"
 
 apt install rclone -y
 printf "q\n" | rclone config
-wget -O /root/.config/rclone/rclone.conf "https://${link}/rclone.conf"
+wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/stangkudut/XRAY/main/backup/rclone.conf"
 
 apt install msmtp-mta ca-certificates bsd-mailx -y
 cat<<EOF>>/etc/msmtprc
