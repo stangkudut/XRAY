@@ -16,7 +16,7 @@ BW='\e[30;48;5;15m'
 OK="${GB}[OK]${NC}"
 Error="${RB}[Mistake]${NC}"
 clear
-echo -e "${OK}Please Wait..."
+echo -e "${OK}Please Wait..."${NC}
 systemctl daemon-reload
 systemctl enable xray
 systemctl restart xray
@@ -24,6 +24,6 @@ systemctl restart nginx
 systemctl enable runn
 systemctl restart runn
 clear
-echo "${OK}Xray.service berhasil di restart"
+echo "${OK}Xray.service berhasil di restart"${NC}
 sleep 3
 menu
