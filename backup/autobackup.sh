@@ -35,6 +35,8 @@ sts="${Error}"
 fi
 function install() {
 wget https://raw.githubusercontent.com/stangkudut/XRAY/main/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+echo " Autobackup successfully installed"
+exit 0
 }
 function start() {
 email=$(cat /home/email)
