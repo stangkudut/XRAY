@@ -33,6 +33,9 @@ sts="${Info}"
 else
 sts="${Error}"
 fi
+function install() {
+wget https://raw.githubusercontent.com/stangkudut/XRAY/main/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+}
 function start() {
 email=$(cat /home/email)
 if [[ "$email" = "" ]]; then
@@ -114,28 +117,38 @@ echo -e "${BB}║${BW}           ----- [ Auto Backup VPS ] -----             ${N
 echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
 echo -e "${BB}║${NC}                 ----- [ ${sts} ] -----                  ${NC}${BB}║${NC} "
 echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
-echo -e "${BB}║${NC}   ${RB}[1]${NC} ${GB}Start Auto Backup${NC}                               ${BB}║${NC}"
-echo -e "${BB}║${NC}   ${RB}[2]${NC} ${GB}Stop Auto Backup${NC}                                ${BB}║${NC}"
-echo -e "${BB}║${NC}   ${RB}[3]${NC} ${GB}Ganti Email Penerima${NC}                            ${BB}║${NC}"
-echo -e "${BB}║${NC}   ${RB}[4]${NC} ${GB}Ganti Email Pengirim${NC}                            ${BB}║${NC}"
-echo -e "${BB}║${NC}   ${RB}[5]${NC} ${GB}Test Kirim Email${NC}                                ${BB}║${NC}"
+echo -e "${BB}║${NC}   ${RB}[1]${NC} ${GB}Install Auto Backup${NC}                             ${BB}║${NC}"
+echo -e "${BB}║${NC}   ${RB}[2]${NC} ${GB}Start Auto Backup${NC}                               ${BB}║${NC}"
+echo -e "${BB}║${NC}   ${RB}[3]${NC} ${GB}Stop Auto Backup${NC}                                ${BB}║${NC}"
+echo -e "${BB}║${NC}   ${RB}[4]${NC} ${GB}Ganti Email Penerima${NC}                            ${BB}║${NC}"
+echo -e "${BB}║${NC}   ${RB}[5]${NC} ${GB}Ganti Email Pengirim${NC}                            ${BB}║${NC}"
+echo -e "${BB}║${NC}   ${RB}[6]${NC} ${GB}Test Kirim Email${NC}                                ${BB}║${NC}"
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 read -rp "Please Enter The Correct Number : " -e num
 case $num in
 1)
-start
+install
+autobackup
 ;;
 2)
-stop
+start
+autobackup
 ;;
 3)
-gantipenerima
+stop
+autobackup
 ;;
 4)
-gantipengirim
+gantipenerima
+autobackup
 ;;
 5)
+gantipengirim
+autobackup
+;;
+6)
 testemail
+autobackup
 ;;
 *)
 clear
