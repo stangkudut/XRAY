@@ -13,7 +13,7 @@ echo -e "${BB}╔═════════════════════
 echo -e "${BB}║${BW}              ----- [ DNS SETTING ] -----              ${NC}${BB}║${NC} "
 echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
 udns=$(cat /user/current)
-echo -e "${BB}║ ${YB}Current DNS${NC} : ${GB}$udns${WB}                             
+echo -e "${BB}║ ${YB}Current DNS${NC} : ${GB}$udns${WB}"                             
 echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
 echo -e "${BB}║ ${MB}[1]${NC} ${YB}Google DNS${NC}                                        ${BB}║${NC}"
 echo -e "${BB}║ ${MB}[2]${NC} ${YB}Cloudflare DNS${NC}                                    ${BB}║${NC}"
