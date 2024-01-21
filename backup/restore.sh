@@ -28,7 +28,7 @@ cp passwd /etc/
 cp group /etc/
 cp shadow /etc/
 cp gshadow /etc/
-cp -r user/ /user/
+cp -r user/* /user/
 cp -r xray/ /usr/local/etc/
 cp -r html/ /var/www/
 rm -rf /root/backupvpsku
