@@ -21,8 +21,6 @@ systemctl daemon-reload
 systemctl enable xray
 systemctl restart xray
 systemctl restart nginx
-systemctl enable runn
-systemctl restart runn
 clear
 echo "${OK}Xray.service berhasil di restart${NC}"
 sleep 3
