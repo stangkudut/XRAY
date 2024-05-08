@@ -40,9 +40,9 @@ trj=$(grep -c -E "& " "/usr/local/etc/xray/config.json")
 let tra=$trj/2
 sdw=$(grep -c -E "! " "/usr/local/etc/xray/config.json")
 let sda=$sdw/2
-sd2=$(grep -c -E "! " "/usr/local/etc/xray/config.json")
+sd2=$(grep -c -E "% " "/usr/local/etc/xray/config.json")
 let s2a=$sd2/2
-scs=$(grep -c -E "! " "/usr/local/etc/xray/config.json")
+scs=$(grep -c -E "÷ " "/usr/local/etc/xray/config.json")
 let sca=$scs/2
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
