@@ -32,6 +32,18 @@ CITY=$(cat /usr/local/etc/xray/city)
 WKT=$(cat /usr/local/etc/xray/timezone)
 DATE=$(date -R | cut -d " " -f -4)
 MYIP=$(curl -sS ipv4.icanhazip.com)
+vme=$(grep -c -E "@ " "/usr/local/etc/xray/config.json")
+let vma=$vme/2
+vle=$(grep -c -E "= " "/usr/local/etc/xray/config.json")
+let vla=$vle/2
+trj=$(grep -c -E "& " "/usr/local/etc/xray/config.json")
+let tra=$trj/2
+sdw=$(grep -c -E "! " "/usr/local/etc/xray/config.json")
+let sda=$sdw/2
+sd2=$(grep -c -E "! " "/usr/local/etc/xray/config.json")
+let s2a=$sd2/2
+scs=$(grep -c -E "! " "/usr/local/etc/xray/config.json")
+let sca=$scs/2
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
 echo -e "${BB}║${BW}        ----- [ Xray Script By ST4NGKUDUT ] -----      ${NC}${BB}║${NC} "
@@ -49,6 +61,15 @@ echo -e "${BB}║ ${WB}Today ($DATE)     Monthly ($(date +%B/%Y))${NC}"
 echo -e "${BB}║  ${GB}↓↓ Down: ${WB}$dtoday          ${GB}↓↓ Down: ${WB}$dmon${NC}"
 echo -e "${BB}║  ${RB}↑↑ Up  : ${WB}$utoday          ${RB}↑↑ Up  : ${WB}$umon${NC}"
 echo -e "${BB}║  ${CB}≈ Total: $ttoday          ≈ Total: $tmon${NC}"
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
+echo -e "${BB}║${BW}             ----- [ Existing Users ] -----            ${NC}${BB}║${NC} "
+echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
+echo -e "${BB}║  ${GB}Vmess${NC}                ${MB}: $vma${NC} ${WB}account${NC}"
+echo -e "${BB}║  ${GB}Vless${NC}                ${MB}: $vla${NC} ${WB}account${NC}"
+echo -e "${BB}║  ${GB}Trojan${NC}               ${MB}: $tra${NC} ${WB}account${NC}"
+echo -e "${BB}║  ${GB}Shadowsocks${NC}          ${MB}: $sda${NC} ${WB}account${NC}"
+echo -e "${BB}║  ${GB}Shadowsocks2022${NC}      ${MB}: $s2a${NC} ${WB}account${NC}"
+echo -e "${BB}║  ${GB}Socks5${NC}               ${MB}: $sca${NC} ${WB}account${NC}"
 echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
 echo -e "${BB}║${BW}              ----- [ Xray Menu ] -----                ${NC}${BB}║${NC} "
 echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}"
