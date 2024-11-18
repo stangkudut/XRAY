@@ -22,6 +22,6 @@ systemctl enable xray
 systemctl restart xray
 systemctl restart nginx
 clear
-echo "${OK}Xray.service berhasil di restart${NC}"
+echo "${OK}Xray.service berhasil di restart"${NC}
 sleep 3
 menu
