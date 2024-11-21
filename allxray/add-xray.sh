@@ -11,7 +11,7 @@ BW='\e[30;48;5;15m'
 clear
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}"
-echo -e "${BB}║${BW}         ----- [ Creat All Xray Account ] -----        ${NC}${BB}║${NC}"
+echo -e "${BB}║${BW}        ----- [ Create All Xray Account ] -----        ${NC}${BB}║${NC}"
 echo -e "${BB}║${BW}         ----- [ VMESS - VLESS - TROJAN ] -----        ${NC}${BB}║${NC}"
 echo -e "${BB}║${BW} ----- [ SHADOWSOCKS 2022, SHADOWSOCKS, SOCKS5 ] ----- ${NC}${BB}║${NC}"
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
