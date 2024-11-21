@@ -236,7 +236,7 @@ END
 systemctl restart xray
 clear
 echo -e "${BB}╔═══════════════════════════════════════════════════════╗${NC}" | tee -a /user/log-allxray-$user.txt
-echo -e "${BB}║${BW}         ----- [ Creat All Xray Account ] -----        ${NC}${BB}║${NC}" | tee -a /user/log-allxray-$user.txt
+echo -e "${BB}║${BW}        ----- [ Create All Xray Account ] -----        ${NC}${BB}║${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${BW}         ----- [ VMESS - VLESS - TROJAN ] -----        ${NC}${BB}║${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║${BW} ----- [ SHADOWSOCKS 2022, SHADOWSOCKS, SOCKS5 ] ----- ${NC}${BB}║${NC}" | tee -a /user/log-allxray-$user.txt
 echo -e "${BB}║═══════════════════════════════════════════════════════║${NC}" | tee -a /user/log-allxray-$user.txt
