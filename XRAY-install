@@ -340,5 +340,6 @@ echo ""
 rm -f xray
 secs_to_human "$(($(date +%s) - ${start}))"
 echo "${BGreen} Auto reboot 10 Sec ${NC}"
+xraymod
 sleep 10
 reboot
