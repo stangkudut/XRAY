@@ -337,9 +337,9 @@ echo -e "${BB}║${WB}- HTTPS : 443, 2053, 2083, 2087, 2096, 8443            ${B
 echo -e "${BB}║${WB}- HTTP  : 80, 8080, 8880, 2052, 2082, 2086, 2095       ${BB}║${NC}"
 echo -e "${BB}╚═══════════════════════════════════════════════════════╝${NC}"
 echo ""
+xraymod
 rm -f xray
 secs_to_human "$(($(date +%s) - ${start}))"
 echo "${BGreen} Auto reboot 10 Sec ${NC}"
-xraymod
 sleep 10
 reboot
